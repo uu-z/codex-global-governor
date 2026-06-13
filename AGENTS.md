@@ -1,6 +1,6 @@
 # Project Instructions
 
-Framework version: `v2.10.1`.
+Framework version: `v3.0.0`.
 
 This project designs and evolves the global Codex Governor framework.
 
@@ -30,7 +30,7 @@ On a new session, read the smallest useful project truth:
 3. `HARNESS.md` only if project-local context is needed
 4. `outputs/` only for specific evidence
 
-Infer objective, end state, current project truth, blocker, taste bar, and next visible progress.
+Infer objective, end state, current project truth, current constraint, taste bar, and next visible progress.
 
 ## Project Constraints
 

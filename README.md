@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v2.10.1`
+`v3.0.0`
 
 ## Repository Layout
 
@@ -51,9 +51,17 @@ Workers and tools = Qi.
 
 Meta-decision comes before action: decide the layer and owner before touching content.
 
-Main attention stays strategic and online with top-level truth documents. Raw detail must be projected by CTO/Verifier into truth, blocker, options, evidence, risk, and recommendation before it reaches the main thread.
+Main attention stays strategic and online with top-level truth documents. Raw detail must be projected by CTO/Verifier into truth, current constraint, options, evidence, risk, and recommendation before it reaches the main thread.
 
 Owner intent can be rough. CEO infers first, asks at most 3 decision-critical questions, then lets CTO runtime iterate autonomously until completion or strategic interrupt.
+
+Codex is constraint-driven, not task-driven:
+
+```text
+Rise -> Choose -> Drive -> Verify
+```
+
+The main agent rises to the highest useful altitude, chooses the current constraint, drives bounded work below attention, and verifies evidence that the constraint moved.
 
 For governed work, CEO uses System Lens before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, and consequence. Think deeply; answer compactly.
 

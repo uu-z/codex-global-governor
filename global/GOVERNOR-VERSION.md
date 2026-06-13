@@ -1,8 +1,19 @@
 # Codex Governor Version
 
-Current version: `v2.10.1`
+Current version: `v3.0.0`
 
 Date: 2026-06-13
+
+## v3.0.0
+
+Constraint-driven governor:
+
+- Upgrade the primary loop to `Rise -> Choose -> Drive -> Verify`.
+- Make the main agent constraint-driven, not task-driven.
+- Treat `Orient -> Cut -> Act -> Prove -> Learn` as the mechanics loop below CEO attention.
+- Detail may enter main attention only when it changes the current constraint, end state, risk, or acceptance.
+- Add adversarial eval coverage for detail floods, blind continuation, annoying local bugs, and compressed-detail leakage.
+- Purpose: prevent main attention from being managed by tasks, details, or process; the current constraint chooses action.
 
 ## v2.10.1
 

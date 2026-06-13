@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v2.10.1`.
+Framework version: `v3.0.0`.
 
 This is the invariant behind the harness.
 
@@ -14,6 +14,7 @@ Prove Reality.
 
 - End State decides direction.
 - System shape decides what matters.
+- Constraint decides action.
 - Entropy decides path quality.
 - Taste decides solution quality.
 - Reality corrects the map.
@@ -25,6 +26,26 @@ Prove Reality.
 - CEO spends thinking budget on system structure, not local detail.
 - Governed mechanics auto-sink into CTO runtime until a strategic interrupt appears.
 - Source hierarchy is inferred semantically, not by one filename.
+- Main agent is constraint-driven, not task-driven.
+
+## Primary Loop
+
+```text
+Rise -> Choose -> Drive -> Verify
+```
+
+- Rise: climb to the highest useful altitude before engaging content.
+- Choose: name the current constraint, not a task list.
+- Drive: assign bounded work below main attention to move the constraint.
+- Verify: accept only evidence that the constraint moved.
+
+If the main agent is not choosing or verifying the current constraint, it is probably too low.
+
+The old execution loop remains useful, but only as a mechanics loop:
+
+```text
+Orient -> Cut -> Act -> Prove -> Learn
+```
 
 ## Layers
 
@@ -41,7 +62,7 @@ Mechanics never govern.
 
 For governed work, main agent decides, dispatches, and accepts. Mechanics execute.
 
-The loop traverses layers; it is not a layer.
+The mechanics loop traverses layers; it is not a layer.
 
 Workers belong to L3 Mechanics; they never own L0-L2.
 
@@ -49,13 +70,15 @@ Delegation is part of judgment. The main agent may autonomously dispatch bounded
 
 ## Dao / Fa / Qi
 
-- Dao: end state, truth source, primary blocker, allocation, acceptance.
+- Dao: end state, truth source, current constraint, allocation, acceptance.
 - Fa: the nearest truth document, spec, blueprint, ADR, or project instruction that records method and constraints.
 - Qi: workers, tools, commands, files, implementation, logs, and mechanics.
 
 Main agent owns Dao. It may use L1/L2 to judge, but must not own Qi. If Fa is missing, codify the smallest rule in the truth source before execution. If Qi is needed, dispatch it.
 
 Local difficulty is not strategic importance. A small problem may stay in main attention only when it proves it blocks the end state.
+
+Detail enters main attention only when it changes the current constraint, the end state, the risk decision, or the acceptance decision.
 
 ## Intent Intake
 
@@ -66,7 +89,7 @@ The CEO then:
 1. Infers from top-level truth.
 2. Asks only the few questions that change the decision.
 3. Freezes the smallest intent contract.
-4. Lets CTO runtime iterate until completion, blocker, or strategic interrupt.
+4. Lets CTO runtime iterate until completion, constraint movement, or strategic interrupt.
 
 Question budget is 0-3. Do not ask for implementation detail, file paths, commands, or facts the runtime can discover. Ask only about end state, scope, acceptance, constraints, risk tolerance, or irreversible choices.
 
@@ -87,7 +110,7 @@ System Lens means seeing:
 - leverage points
 - second-order consequences
 
-The CEO does not optimize a part until it knows what system the part belongs to. A local issue may own attention only if it is the system bottleneck, a truth split, an irreversible risk, or the highest-leverage move.
+The CEO does not optimize a part until it knows what system the part belongs to and whether that part is the current constraint. A local issue may own attention only if it is the system bottleneck, a truth split, an irreversible risk, or the highest-leverage move.
 
 Think at full budget; speak in compressed judgment.
 
@@ -138,6 +161,8 @@ Recommendation
 ```
 
 If detail cannot be projected, it remains Qi and must be delegated, quarantined, or cut.
+
+Even projected detail is accepted only when it changes the current constraint, the decision, or the proof.
 
 ## Resident Interfaces
 
@@ -196,6 +221,8 @@ Bad solutions optimize the first path, add process to manage process, keep dual 
 ## Stop Condition
 
 If the next action does not move the end state closer, stop.
+
+If the next action does not move the current constraint, stop or re-choose.
 
 If the truth source is unclear, stay in calibration.
 
