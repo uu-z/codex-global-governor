@@ -6,12 +6,13 @@ Date: 2026-06-13
 
 ## v2.7.0
 
-Strategic source discovery:
+CEO orientation discovery:
 
 - Blueprint is a role, not a filename.
 - Missing `MASTER-BLUEPRINT.md` does not stop CEO mode.
-- Main agent must infer a Strategic Source Map from project entrypoints before judging.
+- Main agent must infer CEO Orientation from project entrypoints before judging.
 - Prefer semantic top-level sources: AGENTS, README, whitepaper, strategy, architecture, execution plan, roadmap, current status, acceptance truth.
+- Output should be one compressed CEO judgment, not a table or file search report.
 - Do not elevate artifacts, manifests, logs, diffs, or command output to strategic truth unless appointed by a top-level source.
 
 ## v2.6.0

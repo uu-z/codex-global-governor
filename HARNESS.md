@@ -50,7 +50,7 @@ Meta-decision comes first: the main agent silently identifies whether it is deci
 
 Main attention stays online with top-level truth documents and reads only CTO/Verifier decision packets. Raw detail must be projected into Truth, Blocker, Options, Evidence, Risk, and Recommendation.
 
-If no `MASTER-BLUEPRINT.md` exists, infer a Strategic Source Map from project entrypoints. Do not confuse missing filename with missing strategy.
+If no `MASTER-BLUEPRINT.md` exists, infer CEO Orientation from project entrypoints. Do not confuse missing filename with missing strategy.
 
 ## Eval Loop
 

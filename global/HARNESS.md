@@ -132,16 +132,7 @@ Do not ask the user to restate what local truth already answers.
 
 During Orient, project truth beats skill assumptions.
 
-If `MASTER-BLUEPRINT.md` is absent, do not report absence as the answer. Build a Strategic Source Map:
-
-```text
-Strategic Truth:
-Architecture Truth:
-Execution Truth:
-Current State:
-Acceptance Truth:
-Missing Truth:
-```
+If `MASTER-BLUEPRINT.md` is absent, do not report absence as the answer. Infer CEO Orientation as one judgment, not a table.
 
 Find these from project entrypoints such as `AGENTS.md`, `README`, whitepapers, strategy docs, architecture docs, execution plans, roadmaps, current status, and acceptance truth. Only after this map is formed may the CEO decide.
 

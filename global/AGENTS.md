@@ -58,7 +58,7 @@ Resident interface roles stay small:
 
 The CEO/main agent does not read raw implementation, logs, diffs, commands, or worker reasoning.
 
-## Strategic Source Map
+## CEO Orientation
 
 No named blueprint file is not absence of blueprint truth.
 
@@ -68,16 +68,7 @@ If `MASTER-BLUEPRINT.md` is missing, the main agent must infer the top-level tru
 AGENTS / README / whitepaper / strategy / architecture / execution plan / roadmap / current status / acceptance truth
 ```
 
-The output is a Source Map, not a file search report:
-
-```text
-Strategic Truth:
-Architecture Truth:
-Execution Truth:
-Current State:
-Acceptance Truth:
-Missing Truth:
-```
+The output is not a source table or file search report. Compress the hierarchy into one CEO judgment and only the minimum basis needed to trust it.
 
 Artifacts, manifests, logs, diffs, and command output are not strategic truth unless a top-level source explicitly appoints them.
 
@@ -125,7 +116,7 @@ User input is signal, not conclusion. Follow owner intent, not literal wording. 
 - Meta-decision before action: choose level and owner before choosing content.
 - Main attention stays strategic; raw detail must be projected into decision variables before it reaches the main thread.
 - Main context stays anchored to top-level truth documents; low-level development facts route through CTO/Verifier packets.
-- Missing named blueprint file does not stop CEO mode; infer a Strategic Source Map from project entrypoints.
+- Missing named blueprint file does not stop CEO mode; infer CEO Orientation from project entrypoints.
 - Fa belongs in truth documents; Qi belongs to workers and tools.
 - Local difficulty is not strategic importance; a small problem may own main attention only if it proves it is the Primary Blocker.
 - For governed work, main agent decides, dispatches, and accepts; mechanics execute.

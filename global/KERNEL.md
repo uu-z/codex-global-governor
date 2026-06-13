@@ -98,7 +98,7 @@ The CEO does not talk to raw development detail. The CTO or Verifier returns pac
 
 Blueprint is a role, not a filename.
 
-When no explicit `MASTER-BLUEPRINT.md` exists, the main agent builds a Strategic Source Map from the highest available project entrypoints:
+When no explicit `MASTER-BLUEPRINT.md` exists, the main agent infers CEO Orientation from the highest available project entrypoints:
 
 ```text
 AGENTS
@@ -112,7 +112,7 @@ current status
 acceptance truth
 ```
 
-Do not conclude "no blueprint" from a missing filename. Conclude which sources currently play the blueprint roles, then proceed from that hierarchy.
+Do not conclude "no blueprint" from a missing filename. Infer the CEO judgment from the available top-level truth and state only the minimum basis needed to trust it.
 
 Implementation artifacts, manifests, logs, diffs, and command output are lower-level evidence unless appointed by a strategic source.
 

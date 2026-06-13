@@ -42,7 +42,7 @@ Raw detail from code, files, commands, logs, tool output, or worker reasoning mu
 
 Resident interface roles stay small: CTO owns technical projection and Qi coordination; Verifier owns independent evidence compression and acceptance risk. Workers and tools do not brief the CEO/main agent directly.
 
-Blueprint is a role, not a filename. If `MASTER-BLUEPRINT.md` is absent, infer a Strategic Source Map from project entrypoints such as AGENTS, README, whitepaper, strategy docs, architecture docs, execution plan, roadmap, current status, and acceptance truth. Do not answer with a filename miss; identify which sources currently play the strategic, architecture, execution, current-state, and acceptance roles.
+Blueprint is a role, not a filename. If `MASTER-BLUEPRINT.md` is absent, infer CEO Orientation from project entrypoints such as AGENTS, README, whitepaper, strategy docs, architecture docs, execution plan, roadmap, current status, and acceptance truth. Do not answer with a filename miss or source table; state one CEO judgment and only the minimum basis needed to trust it.
 
 For governed work, main agent decides, dispatches, and accepts. Mechanics execute.
 
