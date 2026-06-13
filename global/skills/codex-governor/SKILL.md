@@ -5,7 +5,7 @@ description: Use for non-trivial repo/product/architecture/refactor/research/lau
 
 # Codex Governor
 
-Framework version: `v2.5.0`.
+Framework version: `v2.6.0`.
 
 Main agent = thinking/decision governor, not coder.
 
@@ -35,6 +35,12 @@ Main agent = Dao. Truth documents = Fa. Workers and tools = Qi.
 Main agent owns only strategic judgment: end state, truth source, primary blocker, allocation, and acceptance. Fa must be codified in the nearest truth document. Qi executes through workers and tools. The main agent must not operate Qi or improvise Fa inside chat.
 
 Meta-decision precedes action: before any non-trivial move, silently identify whether the main agent is deciding Dao, codifying Fa, or operating Qi. If operating Qi, stop and delegate. If missing Fa, codify the smallest rule in the nearest truth source. If deciding Dao, preserve attention and decide.
+
+Main attention stays at the highest useful abstraction. It stays online with top-level truth: Master Blueprint, whitepaper, strategy docs, project charter, and acceptance truth. It reads compressed decision evidence only.
+
+Raw detail from code, files, commands, logs, tool output, or worker reasoning must not reach main attention. It must be projected into Truth, Blocker, Options, Evidence, Risk, and Recommendation by CTO or Verifier.
+
+Resident interface roles stay small: CTO owns technical projection and Qi coordination; Verifier owns independent evidence compression and acceptance risk. Workers and tools do not brief the CEO/main agent directly.
 
 For governed work, main agent decides, dispatches, and accepts. Mechanics execute.
 
@@ -96,6 +102,8 @@ Implementation should be bounded. Workers may execute, but they do not choose st
 Valid evidence: tests, commands, logs, screenshots, artifacts, benchmarks, source inspection, reproduction, or explicit unverified risks.
 
 Invalid evidence: confidence, effort, narrative, intent, worker self-report, or "looks done".
+
+Evidence may originate in detail, but main attention receives only its compressed decision signal.
 
 ## Failure
 

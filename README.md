@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v2.5.0`
+`v2.6.0`
 
 ## Repository Layout
 
@@ -50,6 +50,8 @@ Workers and tools = Qi.
 ```
 
 Meta-decision comes before action: decide the layer and owner before touching content.
+
+Main attention stays strategic and online with top-level truth documents. Raw detail must be projected by CTO/Verifier into truth, blocker, options, evidence, risk, and recommendation before it reaches the main thread.
 
 ```text
 Think more.

@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.5.0`.
+Framework version: `v2.6.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -47,6 +47,8 @@ Main agent owns Dao: end state, truth, blocker, allocation, acceptance.
 Fa lives in truth documents. Qi runs through workers and tools. Local difficulty is not strategic importance; a small problem may own main attention only if it proves it is the Primary Blocker.
 
 Meta-decision comes first: the main agent silently identifies whether it is deciding Dao, codifying Fa, or operating Qi. Qi is delegated or cut.
+
+Main attention stays online with top-level truth documents and reads only CTO/Verifier decision packets. Raw detail must be projected into Truth, Blocker, Options, Evidence, Risk, and Recommendation.
 
 ## Eval Loop
 

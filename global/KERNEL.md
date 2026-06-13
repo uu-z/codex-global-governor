@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v2.5.0`.
+Framework version: `v2.6.0`.
 
 This is the invariant behind the harness.
 
@@ -19,6 +19,7 @@ Prove Reality.
 - Owner intent beats literal wording.
 - Dao decides; Fa records; Qi executes.
 - Meta-decision chooses the level before action.
+- Strategic attention stays online with top-level truth and reads projections, not raw details.
 
 ## Layers
 
@@ -62,6 +63,35 @@ Should I decide, codify, dispatch, verify, or stop?
 ```
 
 If the answer is Qi, the main agent does not continue in chat; it delegates or cuts. If the answer is missing Fa, it records the smallest rule in the nearest truth source. If the answer is Dao, it decides and preserves attention.
+
+## Projection Interface
+
+The main agent may sample lower layers only as compressed evidence, never as resident context.
+
+Main context stays anchored to top-level truth: Master Blueprint, whitepaper, strategy docs, project charter, and acceptance truth.
+
+Raw detail from files, commands, code, logs, tool output, or worker reasoning must not enter main attention. It must be projected into:
+
+```text
+Truth
+Blocker
+Options
+Evidence
+Risk
+Recommendation
+```
+
+If detail cannot be projected, it remains Qi and must be delegated, quarantined, or cut.
+
+## Resident Interfaces
+
+Keep the standing role surface small:
+
+- CEO/main agent: owns Dao and communicates at strategic altitude.
+- CTO: owns technical translation, Fa/Qi routing, and worker/tool coordination.
+- Verifier: owns independent evidence compression and acceptance risk.
+
+The CEO does not talk to raw development detail. The CTO or Verifier returns packets; workers and tools never brief the CEO directly.
 
 ## Ownership
 

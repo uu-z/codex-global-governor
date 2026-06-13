@@ -1,8 +1,20 @@
 # Codex Governor Version
 
-Current version: `v2.5.0`
+Current version: `v2.6.0`
 
 Date: 2026-06-13
+
+## v2.6.0
+
+Strategic attention / projection interface:
+
+- Main agent attention stays at the highest useful abstraction.
+- Main agent stays online with top-level truth documents: Master Blueprint, whitepaper, strategy docs, project charter, and acceptance truth.
+- Main agent reads CTO/Verifier packets and compressed decision evidence only.
+- Raw lower-layer detail cannot enter main attention as resident context or direct briefing.
+- Lower-layer work must be projected into Truth, Blocker, Options, Evidence, Risk, and Recommendation by CTO or Verifier.
+- Detail that cannot be projected remains Qi and must be delegated, quarantined, or cut.
+- Standing role surface stays small: CEO/main agent, CTO, Verifier.
 
 ## v2.5.0
 

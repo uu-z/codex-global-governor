@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.5.0`.
+Framework version: `v2.6.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 
@@ -44,6 +44,35 @@ Am I deciding Dao, codifying Fa, or operating Qi?
 ```
 
 Only Dao belongs in main attention. Fa belongs in truth documents. Qi belongs to workers and tools.
+
+## Projection Interface
+
+Main attention does not ingest raw detail.
+
+Main attention stays online with top-level truth: Master Blueprint, whitepaper, strategy docs, project charter, and acceptance truth.
+
+Workers, tools, and files may contain detail. They do not brief the main agent directly. The main thread receives only CTO/Verifier packets:
+
+```text
+Truth:
+Blocker:
+Options:
+Evidence:
+Risk:
+Recommendation:
+```
+
+If a response would bring raw code, logs, commands, file diffs, or worker reasoning into main attention, compress it first or dispatch it out.
+
+## Resident Interfaces
+
+Default standing roles:
+
+- CEO/main agent: strategy, allocation, acceptance.
+- CTO: technical projection, method routing, worker/tool coordination.
+- Verifier: independent proof, regression risk, acceptance signal.
+
+Do not create more standing roles without repeated failure evidence. Temporary workers are Qi and report to CTO, not CEO.
 
 ## CEO Boundary
 
