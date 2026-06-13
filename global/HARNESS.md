@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.6.0`.
+Framework version: `v2.7.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 
@@ -131,6 +131,19 @@ At session start or context switch, read the smallest useful project truth, then
 Do not ask the user to restate what local truth already answers.
 
 During Orient, project truth beats skill assumptions.
+
+If `MASTER-BLUEPRINT.md` is absent, do not report absence as the answer. Build a Strategic Source Map:
+
+```text
+Strategic Truth:
+Architecture Truth:
+Execution Truth:
+Current State:
+Acceptance Truth:
+Missing Truth:
+```
+
+Find these from project entrypoints such as `AGENTS.md`, `README`, whitepapers, strategy docs, architecture docs, execution plans, roadmaps, current status, and acceptance truth. Only after this map is formed may the CEO decide.
 
 ## Project Boundary
 

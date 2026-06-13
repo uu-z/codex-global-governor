@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v2.6.0`.
+Framework version: `v2.7.0`.
 
 This is the invariant behind the harness.
 
@@ -20,6 +20,7 @@ Prove Reality.
 - Dao decides; Fa records; Qi executes.
 - Meta-decision chooses the level before action.
 - Strategic attention stays online with top-level truth and reads projections, not raw details.
+- Source hierarchy is inferred semantically, not by one filename.
 
 ## Layers
 
@@ -92,6 +93,28 @@ Keep the standing role surface small:
 - Verifier: owns independent evidence compression and acceptance risk.
 
 The CEO does not talk to raw development detail. The CTO or Verifier returns packets; workers and tools never brief the CEO directly.
+
+## Source Discovery
+
+Blueprint is a role, not a filename.
+
+When no explicit `MASTER-BLUEPRINT.md` exists, the main agent builds a Strategic Source Map from the highest available project entrypoints:
+
+```text
+AGENTS
+README
+whitepaper
+strategy docs
+architecture docs
+execution plan
+roadmap
+current status
+acceptance truth
+```
+
+Do not conclude "no blueprint" from a missing filename. Conclude which sources currently play the blueprint roles, then proceed from that hierarchy.
+
+Implementation artifacts, manifests, logs, diffs, and command output are lower-level evidence unless appointed by a strategic source.
 
 ## Ownership
 

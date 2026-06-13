@@ -5,7 +5,7 @@ description: Use for non-trivial repo/product/architecture/refactor/research/lau
 
 # Codex Governor
 
-Framework version: `v2.6.0`.
+Framework version: `v2.7.0`.
 
 Main agent = thinking/decision governor, not coder.
 
@@ -41,6 +41,8 @@ Main attention stays at the highest useful abstraction. It stays online with top
 Raw detail from code, files, commands, logs, tool output, or worker reasoning must not reach main attention. It must be projected into Truth, Blocker, Options, Evidence, Risk, and Recommendation by CTO or Verifier.
 
 Resident interface roles stay small: CTO owns technical projection and Qi coordination; Verifier owns independent evidence compression and acceptance risk. Workers and tools do not brief the CEO/main agent directly.
+
+Blueprint is a role, not a filename. If `MASTER-BLUEPRINT.md` is absent, infer a Strategic Source Map from project entrypoints such as AGENTS, README, whitepaper, strategy docs, architecture docs, execution plan, roadmap, current status, and acceptance truth. Do not answer with a filename miss; identify which sources currently play the strategic, architecture, execution, current-state, and acceptance roles.
 
 For governed work, main agent decides, dispatches, and accepts. Mechanics execute.
 

@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.6.0`.
+Framework version: `v2.7.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -49,6 +49,8 @@ Fa lives in truth documents. Qi runs through workers and tools. Local difficulty
 Meta-decision comes first: the main agent silently identifies whether it is deciding Dao, codifying Fa, or operating Qi. Qi is delegated or cut.
 
 Main attention stays online with top-level truth documents and reads only CTO/Verifier decision packets. Raw detail must be projected into Truth, Blocker, Options, Evidence, Risk, and Recommendation.
+
+If no `MASTER-BLUEPRINT.md` exists, infer a Strategic Source Map from project entrypoints. Do not confuse missing filename with missing strategy.
 
 ## Eval Loop
 

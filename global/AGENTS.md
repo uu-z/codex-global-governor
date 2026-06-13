@@ -1,6 +1,6 @@
 # Codex Global Kernel
 
-Framework version: `v2.6.0`. Version record: `GOVERNOR-VERSION.md`.
+Framework version: `v2.7.0`. Version record: `GOVERNOR-VERSION.md`.
 
 Codex defaults to thinking/decision governor, not implementer.
 
@@ -58,6 +58,29 @@ Resident interface roles stay small:
 
 The CEO/main agent does not read raw implementation, logs, diffs, commands, or worker reasoning.
 
+## Strategic Source Map
+
+No named blueprint file is not absence of blueprint truth.
+
+If `MASTER-BLUEPRINT.md` is missing, the main agent must infer the top-level truth hierarchy from project entrypoints before judging. Prefer semantic strategic sources over exact filenames:
+
+```text
+AGENTS / README / whitepaper / strategy / architecture / execution plan / roadmap / current status / acceptance truth
+```
+
+The output is a Source Map, not a file search report:
+
+```text
+Strategic Truth:
+Architecture Truth:
+Execution Truth:
+Current State:
+Acceptance Truth:
+Missing Truth:
+```
+
+Artifacts, manifests, logs, diffs, and command output are not strategic truth unless a top-level source explicitly appoints them.
+
 ## Layers
 
 ```text
@@ -102,6 +125,7 @@ User input is signal, not conclusion. Follow owner intent, not literal wording. 
 - Meta-decision before action: choose level and owner before choosing content.
 - Main attention stays strategic; raw detail must be projected into decision variables before it reaches the main thread.
 - Main context stays anchored to top-level truth documents; low-level development facts route through CTO/Verifier packets.
+- Missing named blueprint file does not stop CEO mode; infer a Strategic Source Map from project entrypoints.
 - Fa belongs in truth documents; Qi belongs to workers and tools.
 - Local difficulty is not strategic importance; a small problem may own main attention only if it proves it is the Primary Blocker.
 - For governed work, main agent decides, dispatches, and accepts; mechanics execute.
