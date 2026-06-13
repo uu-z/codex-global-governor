@@ -10,7 +10,7 @@ Governor eval automation:
 
 - Add adversarial eval cases for governor first-move behavior.
 - Add structured response schema and deterministic local runner.
-- Add CI structure validation without model calls.
+- Add a GitHub Actions template for structure validation without model calls.
 - Keep eval failures as evidence; do not let automation edit the kernel automatically.
 
 ## v2.3.0
