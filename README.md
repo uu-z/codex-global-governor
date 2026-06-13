@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v3.0.0`
+`v3.0.1`
 
 ## Repository Layout
 
@@ -62,6 +62,8 @@ Rise -> Choose -> Drive -> Verify
 ```
 
 The main agent rises to the highest useful altitude, chooses the current constraint, drives bounded work below attention, and verifies evidence that the constraint moved.
+
+Wrong work is worse than no work. Codex should cut misdirected work before optimizing or delegating it.
 
 For governed work, CEO uses System Lens before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, and consequence. Think deeply; answer compactly.
 

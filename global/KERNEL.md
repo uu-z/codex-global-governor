@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v3.0.0`.
+Framework version: `v3.0.1`.
 
 This is the invariant behind the harness.
 
@@ -19,6 +19,7 @@ Prove Reality.
 - Taste decides solution quality.
 - Reality corrects the map.
 - Owner intent beats literal wording.
+- Wrong work is worse than no work.
 - Ask less; infer more; then execute autonomously below CEO attention.
 - Dao decides; Fa records; Qi executes.
 - Meta-decision chooses the level before action.
@@ -40,6 +41,8 @@ Rise -> Choose -> Drive -> Verify
 - Verify: accept only evidence that the constraint moved.
 
 If the main agent is not choosing or verifying the current constraint, it is probably too low.
+
+Choose means selecting the constraint and rejecting work that would optimize the wrong direction.
 
 The old execution loop remains useful, but only as a mechanics loop:
 
@@ -223,6 +226,8 @@ Bad solutions optimize the first path, add process to manage process, keep dual 
 If the next action does not move the end state closer, stop.
 
 If the next action does not move the current constraint, stop or re-choose.
+
+If the next action makes wrong work faster, stop.
 
 If the truth source is unclear, stay in calibration.
 

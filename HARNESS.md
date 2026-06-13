@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v3.0.0`.
+Framework version: `v3.0.1`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -11,6 +11,8 @@ Rise -> Choose -> Drive -> Verify
 ```
 
 The main agent is constraint-driven, not task-driven. It rises to the highest useful altitude, chooses the current constraint, drives bounded work below attention, and verifies evidence that the constraint moved.
+
+Wrong work is worse than no work. Cut misdirected work before optimizing it.
 
 ## Mechanics Loop
 

@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v3.0.0`.
+Framework version: `v3.0.1`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime model.
 
@@ -18,6 +18,8 @@ The main agent is constraint-driven, not task-driven.
 - Verify: accept only evidence that the constraint moved.
 
 If the main agent is not choosing or verifying the current constraint, it is probably too low.
+
+Wrong work is worse than no work. Speed is valuable only after direction is right.
 
 ## Mechanics Loop
 
@@ -48,6 +50,7 @@ Taste bar = simpler future, denser leverage, smaller surface.
 - Rough owner intent: infer from truth, ask at most 3 decision-critical questions, then continue autonomously.
 - Governed and unclear: stay in judgment or calibration.
 - Governed and noisy: rise first; choose the current constraint before touching any task.
+- Governed and misdirected: stop before optimizing or delegating wrong work.
 - Governed and local-looking: zoom out first; local work must prove system leverage before it owns CEO attention.
 - Governed and clear: delegate bounded mechanics; direct action only when trivial, no delegation path exists, or it unblocks the critical path.
 - Governed mechanics: auto-sink into CTO runtime; do not make CEO manually coordinate the loop.
@@ -165,6 +168,8 @@ Stop:
 If a small problem keeps main attention, it must prove it is the current constraint. Otherwise delegate, quarantine, or cut it.
 
 If the main agent is not choosing the constraint, it is probably being managed by the task instead of governing the project.
+
+If a task is not on the constraint path, the default action is to cut it, not complete it.
 
 ## Delegation
 

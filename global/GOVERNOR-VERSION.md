@@ -1,8 +1,18 @@
 # Codex Governor Version
 
-Current version: `v3.0.0`
+Current version: `v3.0.1`
 
 Date: 2026-06-13
+
+## v3.0.1
+
+Wrong-work prevention patch:
+
+- Add the negative-space law: wrong work is worse than no work.
+- Make `Choose` reject work that optimizes the wrong direction.
+- Add a routing rule to stop misdirected governed work before delegating or accelerating it.
+- Add adversarial eval coverage for efficient execution in the wrong direction.
+- Purpose: prevent v3 from becoming a high-speed task machine when direction is wrong.
 
 ## v3.0.0
 
