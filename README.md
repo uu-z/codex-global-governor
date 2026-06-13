@@ -25,7 +25,6 @@ Prove Reality.
 - `HARNESS.md`: project-local mental model.
 - `evals/`: adversarial governor evaluation cases and schema.
 - `scripts/governor-eval.sh`: local eval runner.
-- `ci/github-governor-evals.yml`: GitHub Actions template for eval structure validation.
 - `outputs/`: audit and pruning evidence.
 
 ## Install Shape
