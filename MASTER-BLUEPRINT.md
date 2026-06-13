@@ -58,7 +58,7 @@ Codex behaves like a low-entropy engineering governor:
 
 ## Current Constraint
 
-Make Codex stop wrong work before it accelerates task execution.
+Prove v3 under a real governed project, not only first-move evals.
 
 ## Next Visible Progress
 
@@ -76,6 +76,8 @@ CEO accepts a local issue only when it proves system leverage.
 CEO asks at most 3 decision-critical questions, then lets CTO runtime iterate to completion or strategic interrupt.
 
 CEO continues only when it can name the current constraint. If it cannot, it rises and re-chooses before acting.
+
+Latest evidence: full LLM first-move eval passed 17/17 on 2026-06-13. See `outputs/governor-v3-llm-eval-2026-06-13.md`.
 
 ## Stop List
 
