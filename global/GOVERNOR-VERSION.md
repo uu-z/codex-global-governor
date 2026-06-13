@@ -1,8 +1,19 @@
 # Codex Governor Version
 
-Current version: `v2.7.0`
+Current version: `v2.8.0`
 
 Date: 2026-06-13
+
+## v2.8.0
+
+Automatic CTO runtime:
+
+- CEO/main agent does not manually coordinate mechanics.
+- Governed mechanical work auto-sinks into CTO runtime below CEO attention.
+- CTO runtime handles files, commands, code, logs, tests, worker coordination, and evidence collection.
+- CEO sees only strategic interrupts: decide, stop, change direction, or accept.
+- If raw detail reaches CEO attention, compress it, sink it, or cut it.
+- Purpose: make the CEO boundary automatic instead of a visible coordination ritual.
 
 ## v2.7.0
 

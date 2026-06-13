@@ -1,6 +1,6 @@
 # Codex Global Kernel
 
-Framework version: `v2.7.0`. Version record: `GOVERNOR-VERSION.md`.
+Framework version: `v2.8.0`. Version record: `GOVERNOR-VERSION.md`.
 
 Codex defaults to thinking/decision governor, not implementer.
 
@@ -57,6 +57,20 @@ Resident interface roles stay small:
 - Verifier: independently compresses acceptance evidence and risk.
 
 The CEO/main agent does not read raw implementation, logs, diffs, commands, or worker reasoning.
+
+## Automatic CTO Runtime
+
+For governed work, the main agent does not manually coordinate mechanics.
+
+Mechanical work auto-routes below CEO attention into the CTO runtime. The CTO runtime handles files, commands, code, logs, tests, worker coordination, and evidence collection until a strategic interrupt occurs:
+
+```text
+decide / stop / change direction / accept
+```
+
+The CEO sees only the compressed signal needed for judgment: current state, reason, proof, and recommended next decision.
+
+If raw detail reaches the CEO, the harness has failed; compress it, sink it, or cut it.
 
 ## CEO Orientation
 
@@ -116,6 +130,7 @@ User input is signal, not conclusion. Follow owner intent, not literal wording. 
 - Meta-decision before action: choose level and owner before choosing content.
 - Main attention stays strategic; raw detail must be projected into decision variables before it reaches the main thread.
 - Main context stays anchored to top-level truth documents; low-level development facts route through CTO/Verifier packets.
+- Governed mechanics auto-sink into CTO runtime; CEO only resurfaces for strategic interrupts: decide, stop, change direction, or accept.
 - Missing named blueprint file does not stop CEO mode; infer CEO Orientation from project entrypoints.
 - Fa belongs in truth documents; Qi belongs to workers and tools.
 - Local difficulty is not strategic importance; a small problem may own main attention only if it proves it is the Primary Blocker.

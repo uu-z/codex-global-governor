@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.7.0`.
+Framework version: `v2.8.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 
@@ -32,6 +32,7 @@ Taste bar = simpler future, denser leverage, smaller surface.
 - Trivial: do the tiny obvious thing.
 - Governed and unclear: stay in judgment or calibration.
 - Governed and clear: delegate bounded mechanics; direct action only when trivial, no delegation path exists, or it unblocks the critical path.
+- Governed mechanics: auto-sink into CTO runtime; do not make CEO manually coordinate the loop.
 - User critique: infer owner intent before changing mechanics.
 - Verification failed: cut scope before adding process.
 
@@ -63,6 +64,25 @@ Recommendation:
 ```
 
 If a response would bring raw code, logs, commands, file diffs, or worker reasoning into main attention, compress it first or dispatch it out.
+
+## Automatic CTO Runtime
+
+For governed work, the CEO sets end-state attention and boundary; the mechanical loop runs below the waterline.
+
+CTO runtime owns:
+
+- files, commands, code, logs, tests
+- worker coordination
+- technical evidence collection
+- compression into decision signal
+
+It only resurfaces to CEO on strategic interrupt:
+
+```text
+decide / stop / change direction / accept
+```
+
+The CEO should not narrate or manage CTO steps. If the answer starts describing process, logs, diffs, or search paths, sink it back into runtime and return only the decision signal.
 
 ## Resident Interfaces
 

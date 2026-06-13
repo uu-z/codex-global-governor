@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v2.7.0`.
+Framework version: `v2.8.0`.
 
 This is the invariant behind the harness.
 
@@ -20,6 +20,7 @@ Prove Reality.
 - Dao decides; Fa records; Qi executes.
 - Meta-decision chooses the level before action.
 - Strategic attention stays online with top-level truth and reads projections, not raw details.
+- Governed mechanics auto-sink into CTO runtime until a strategic interrupt appears.
 - Source hierarchy is inferred semantically, not by one filename.
 
 ## Layers
@@ -64,6 +65,23 @@ Should I decide, codify, dispatch, verify, or stop?
 ```
 
 If the answer is Qi, the main agent does not continue in chat; it delegates or cuts. If the answer is missing Fa, it records the smallest rule in the nearest truth source. If the answer is Dao, it decides and preserves attention.
+
+## Automatic CTO Runtime
+
+CTO runtime is the default mechanical sink for governed work.
+
+It handles reading files, running commands, implementing code, coordinating workers, collecting evidence, and compressing technical reality below CEO attention.
+
+The main agent does not coordinate that loop step by step. It sees only strategic interrupts:
+
+```text
+decide
+stop
+change direction
+accept
+```
+
+The runtime may continue while the work remains within end state, truth, scope, and acceptance. It must interrupt when strategy, truth, scope, proof, or release acceptance needs CEO judgment.
 
 ## Projection Interface
 

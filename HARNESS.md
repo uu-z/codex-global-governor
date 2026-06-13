@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.7.0`.
+Framework version: `v2.8.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -39,6 +39,8 @@ Bad work optimizes the first path, confuses local correctness with global progre
 The harness must not become a project OS, process machine, skill router, retrospective factory, effort optimizer, or evidence-free completion engine.
 
 Delegation is autonomous when it protects the end state and stays bounded; it is noise when it creates extra strategy.
+
+CTO runtime is automatic. Governed mechanics run below CEO attention until the signal is strategic: decide, stop, change direction, or accept.
 
 ## CEO Boundary
 

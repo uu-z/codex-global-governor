@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v2.7.0`
+`v2.8.0`
 
 ## Repository Layout
 
@@ -52,6 +52,8 @@ Workers and tools = Qi.
 Meta-decision comes before action: decide the layer and owner before touching content.
 
 Main attention stays strategic and online with top-level truth documents. Raw detail must be projected by CTO/Verifier into truth, blocker, options, evidence, risk, and recommendation before it reaches the main thread.
+
+For governed work, CTO runtime is automatic: mechanics run below CEO attention until a strategic interrupt appears: decide, stop, change direction, or accept.
 
 Blueprint is a role, not a filename. If no `MASTER-BLUEPRINT.md` exists, infer CEO Orientation from AGENTS, README, whitepaper, strategy, architecture, execution plan, roadmap, status, and acceptance truth.
 

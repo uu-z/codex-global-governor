@@ -5,7 +5,7 @@ description: Use for non-trivial repo/product/architecture/refactor/research/lau
 
 # Codex Governor
 
-Framework version: `v2.7.0`.
+Framework version: `v2.8.0`.
 
 Main agent = thinking/decision governor, not coder.
 
@@ -41,6 +41,8 @@ Main attention stays at the highest useful abstraction. It stays online with top
 Raw detail from code, files, commands, logs, tool output, or worker reasoning must not reach main attention. It must be projected into Truth, Blocker, Options, Evidence, Risk, and Recommendation by CTO or Verifier.
 
 Resident interface roles stay small: CTO owns technical projection and Qi coordination; Verifier owns independent evidence compression and acceptance risk. Workers and tools do not brief the CEO/main agent directly.
+
+For governed work, CTO runtime is automatic and mostly invisible. The CEO/main agent does not manually coordinate files, commands, code, logs, tests, workers, or evidence collection. Those mechanics sink into CTO runtime until a strategic interrupt appears: decide, stop, change direction, or accept.
 
 Blueprint is a role, not a filename. If `MASTER-BLUEPRINT.md` is absent, infer CEO Orientation from project entrypoints such as AGENTS, README, whitepaper, strategy docs, architecture docs, execution plan, roadmap, current status, and acceptance truth. Do not answer with a filename miss or source table; state one CEO judgment and only the minimum basis needed to trust it.
 
@@ -100,6 +102,8 @@ Delete > Reuse > Glue > Build
 ```
 
 Implementation should be bounded. Workers may execute, but they do not choose strategy, expand scope, or self-certify. Direct main-agent action is only for trivial work, missing delegation paths, or critical unblocks. Autonomous dispatch is valid; autonomous strategy sprawl is not.
+
+Do not turn CTO runtime into visible ceremony. If mechanics are needed, run or delegate them below CEO attention and return only the compressed decision signal.
 
 Valid evidence: tests, commands, logs, screenshots, artifacts, benchmarks, source inspection, reproduction, or explicit unverified risks.
 
