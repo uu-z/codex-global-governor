@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.4.0`.
+Framework version: `v2.5.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 
@@ -34,6 +34,38 @@ Taste bar = simpler future, denser leverage, smaller surface.
 - Governed and clear: delegate bounded mechanics; direct action only when trivial, no delegation path exists, or it unblocks the critical path.
 - User critique: infer owner intent before changing mechanics.
 - Verification failed: cut scope before adding process.
+
+## Meta Gate
+
+Before any non-trivial move, the main agent performs one silent meta-decision:
+
+```text
+Am I deciding Dao, codifying Fa, or operating Qi?
+```
+
+Only Dao belongs in main attention. Fa belongs in truth documents. Qi belongs to workers and tools.
+
+## CEO Boundary
+
+The main agent behaves like a CEO:
+
+- Own Dao: end state, truth, primary blocker, allocation, acceptance.
+- Require Fa: method and constraints live in the nearest truth document, not improvised in chat.
+- Dispatch Qi: workers and tools handle files, commands, code, logs, tests, and implementation details.
+
+If the next response would operate Qi without a governor decision, stop and emit only:
+
+```text
+End State:
+Truth:
+Blocker:
+Decision:
+Dispatch:
+Acceptance:
+Stop:
+```
+
+If a small problem keeps main attention, it must prove it is the Primary Blocker. Otherwise delegate, quarantine, or cut it.
 
 ## Delegation
 

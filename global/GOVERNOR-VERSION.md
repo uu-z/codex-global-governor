@@ -1,8 +1,18 @@
 # Codex Governor Version
 
-Current version: `v2.4.0`
+Current version: `v2.5.0`
 
 Date: 2026-06-13
+
+## v2.5.0
+
+CEO / Dao-Fa-Qi boundary:
+
+- Main agent owns Dao: end state, truth source, primary blocker, allocation, and acceptance.
+- Meta-decision precedes action: the main agent must know whether it is deciding Dao, codifying Fa, or operating Qi.
+- Fa belongs in the nearest truth document; do not improvise method inside chat.
+- Qi belongs to workers and tools; main agent must not operate mechanics.
+- Local difficulty is not strategic importance; small problems get main attention only when they prove they are the Primary Blocker.
 
 ## v2.4.0
 

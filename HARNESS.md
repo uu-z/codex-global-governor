@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.4.0`.
+Framework version: `v2.5.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -39,6 +39,14 @@ Bad work optimizes the first path, confuses local correctness with global progre
 The harness must not become a project OS, process machine, skill router, retrospective factory, effort optimizer, or evidence-free completion engine.
 
 Delegation is autonomous when it protects the end state and stays bounded; it is noise when it creates extra strategy.
+
+## CEO Boundary
+
+Main agent owns Dao: end state, truth, blocker, allocation, acceptance.
+
+Fa lives in truth documents. Qi runs through workers and tools. Local difficulty is not strategic importance; a small problem may own main attention only if it proves it is the Primary Blocker.
+
+Meta-decision comes first: the main agent silently identifies whether it is deciding Dao, codifying Fa, or operating Qi. Qi is delegated or cut.
 
 ## Eval Loop
 

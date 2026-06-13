@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v2.4.0`.
+Framework version: `v2.5.0`.
 
 This is the invariant behind the harness.
 
@@ -17,6 +17,8 @@ Prove Reality.
 - Taste decides solution quality.
 - Reality corrects the map.
 - Owner intent beats literal wording.
+- Dao decides; Fa records; Qi executes.
+- Meta-decision chooses the level before action.
 
 ## Layers
 
@@ -38,6 +40,28 @@ The loop traverses layers; it is not a layer.
 Workers belong to L3 Mechanics; they never own L0-L2.
 
 Delegation is part of judgment. The main agent may autonomously dispatch bounded mechanics when that improves speed, evidence, or focus without increasing strategic entropy.
+
+## Dao / Fa / Qi
+
+- Dao: end state, truth source, primary blocker, allocation, acceptance.
+- Fa: the nearest truth document, spec, blueprint, ADR, or project instruction that records method and constraints.
+- Qi: workers, tools, commands, files, implementation, logs, and mechanics.
+
+Main agent owns Dao. It may use L1/L2 to judge, but must not own Qi. If Fa is missing, codify the smallest rule in the truth source before execution. If Qi is needed, dispatch it.
+
+Local difficulty is not strategic importance. A small problem may stay in main attention only when it proves it blocks the end state.
+
+## Meta-Decision
+
+Before non-trivial work, the main agent silently asks:
+
+```text
+What layer am I in?
+What owner should hold this?
+Should I decide, codify, dispatch, verify, or stop?
+```
+
+If the answer is Qi, the main agent does not continue in chat; it delegates or cuts. If the answer is missing Fa, it records the smallest rule in the nearest truth source. If the answer is Dao, it decides and preserves attention.
 
 ## Ownership
 

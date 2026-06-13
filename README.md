@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v2.4.0`
+`v2.5.0`
 
 ## Repository Layout
 
@@ -42,6 +42,14 @@ global/skills/codex-governor/SKILL.md -> ~/.codex/skills/codex-governor/SKILL.md
 ## Operating Principle
 
 Main agent owns attention and decision. Workers, tools, skills, files, and commands are mechanics.
+
+```text
+Main agent = Dao.
+Truth documents = Fa.
+Workers and tools = Qi.
+```
+
+Meta-decision comes before action: decide the layer and owner before touching content.
 
 ```text
 Think more.
