@@ -1,8 +1,19 @@
 # Codex Governor Version
 
-Current version: `v2.9.0`
+Current version: `v2.10.0`
 
 Date: 2026-06-13
+
+## v2.10.0
+
+Intent Intake:
+
+- Owner can state a rough goal; CEO infers from top-level truth first.
+- CEO asks at most 3 decision-critical questions.
+- Ask only about end state, scope, acceptance, constraints, risk tolerance, or irreversible choices.
+- Do not ask users for mechanics that CTO runtime can discover.
+- After minimum intake, freeze a short intent contract internally and let CTO runtime iterate autonomously until completion, blocker, or strategic interrupt.
+- Purpose: convert user intent into autonomous delivery without making the owner drive the project.
 
 ## v2.9.0
 

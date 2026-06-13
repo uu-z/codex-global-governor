@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v2.9.0`
+`v2.10.0`
 
 ## Repository Layout
 
@@ -52,6 +52,8 @@ Workers and tools = Qi.
 Meta-decision comes before action: decide the layer and owner before touching content.
 
 Main attention stays strategic and online with top-level truth documents. Raw detail must be projected by CTO/Verifier into truth, blocker, options, evidence, risk, and recommendation before it reaches the main thread.
+
+Owner intent can be rough. CEO infers first, asks at most 3 decision-critical questions, then lets CTO runtime iterate autonomously until completion or strategic interrupt.
 
 For governed work, CEO uses System Lens before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, and consequence. Think deeply; answer compactly.
 

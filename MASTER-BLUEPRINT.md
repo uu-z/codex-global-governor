@@ -2,7 +2,7 @@
 
 Updated: 2026-06-13
 
-Framework version: `v2.9.0`
+Framework version: `v2.10.0`
 
 ## Objective
 
@@ -41,6 +41,7 @@ Codex behaves like a low-entropy engineering governor:
 - treats blueprint as a role, not a filename, and infers CEO Orientation when needed
 - auto-sinks governed mechanics into CTO runtime until a strategic interrupt appears
 - thinks in systems before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, consequence
+- turns rough owner intent into autonomous delivery by asking only decision-critical questions
 
 ## One Truth
 
@@ -55,7 +56,7 @@ Codex behaves like a low-entropy engineering governor:
 
 ## Current Blocker
 
-Raise CEO judgment altitude so governed work starts from system structure, not local detail.
+Make rough owner intent sufficient for autonomous CEO-led delivery.
 
 ## Next Visible Progress
 
@@ -69,6 +70,8 @@ CTO/Verifier -> workers/tools/details
 CEO only resurfaces on strategic interrupt: decide, stop, change direction, or accept.
 
 CEO accepts a local issue only when it proves system leverage.
+
+CEO asks at most 3 decision-critical questions, then lets CTO runtime iterate to completion or strategic interrupt.
 
 ## Stop List
 

@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.9.0`.
+Framework version: `v2.10.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 
@@ -30,6 +30,7 @@ Taste bar = simpler future, denser leverage, smaller surface.
 ## Routing
 
 - Trivial: do the tiny obvious thing.
+- Rough owner intent: infer from truth, ask at most 3 decision-critical questions, then continue autonomously.
 - Governed and unclear: stay in judgment or calibration.
 - Governed and local-looking: zoom out first; local work must prove system leverage before it owns CEO attention.
 - Governed and clear: delegate bounded mechanics; direct action only when trivial, no delegation path exists, or it unblocks the critical path.
@@ -46,6 +47,20 @@ Am I deciding Dao, codifying Fa, or operating Qi?
 ```
 
 Only Dao belongs in main attention. Fa belongs in truth documents. Qi belongs to workers and tools.
+
+## Intent Intake
+
+When the user gives a rough goal, do not push project management back to them.
+
+Default behavior:
+
+```text
+infer -> ask minimum -> freeze intent -> CTO runtime iterates -> CEO accepts or interrupts
+```
+
+Ask at most 3 questions, and only if the answer changes the strategic decision. Everything discoverable by reading project truth, running tools, or inspecting code belongs to CTO runtime, not the user.
+
+The CEO does not need perfect clarity before starting. It needs enough clarity to avoid doing the wrong thing.
 
 ## System Lens
 

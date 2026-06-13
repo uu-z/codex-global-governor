@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.9.0`.
+Framework version: `v2.10.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -28,6 +28,8 @@ If the session gets heavy, compress or discard the 10% first.
 
 In governed work, spend the protected 90% on System Lens before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, and consequence.
 
+Rough owner intent should be enough to start. Infer first, ask at most 3 decision-critical questions, then let CTO runtime iterate.
+
 Taste bar = simpler future, denser leverage, smaller surface.
 
 ## Taste
@@ -45,6 +47,8 @@ Delegation is autonomous when it protects the end state and stays bounded; it is
 CTO runtime is automatic. Governed mechanics run below CEO attention until the signal is strategic: decide, stop, change direction, or accept.
 
 System Lens is mandatory before CEO accepts a local issue as important. Local detail must prove system leverage.
+
+Intent Intake prevents owner-driven micromanagement: CEO asks only what changes strategy, not what mechanics can discover.
 
 ## CEO Boundary
 
