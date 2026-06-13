@@ -2,7 +2,7 @@
 
 Updated: 2026-06-13
 
-Framework version: `v2.10.0`
+Framework version: `v2.10.1`
 
 ## Objective
 

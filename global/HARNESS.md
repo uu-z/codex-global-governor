@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.10.0`.
+Framework version: `v2.10.1`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 

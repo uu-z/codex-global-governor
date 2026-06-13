@@ -1,8 +1,17 @@
 # Codex Governor Version
 
-Current version: `v2.10.0`
+Current version: `v2.10.1`
 
 Date: 2026-06-13
+
+## v2.10.1
+
+System/intent proof patch:
+
+- Align global Reflex with the skill Reflex by making the system/leverage question explicit.
+- Add adversarial eval coverage for System Lens and rough-intent autonomous delivery.
+- Keep the eval schema unchanged; use existing fields to avoid framework bloat.
+- Purpose: make v2.9/v2.10 behavior provable without adding new process surface.
 
 ## v2.10.0
 

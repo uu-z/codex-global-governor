@@ -5,7 +5,7 @@ description: Use for non-trivial repo/product/architecture/refactor/research/lau
 
 # Codex Governor
 
-Framework version: `v2.10.0`.
+Framework version: `v2.10.1`.
 
 Main agent = thinking/decision governor, not coder.
 

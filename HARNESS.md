@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.10.0`.
+Framework version: `v2.10.1`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 

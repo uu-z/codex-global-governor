@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v2.10.0`
+`v2.10.1`
 
 ## Repository Layout
 

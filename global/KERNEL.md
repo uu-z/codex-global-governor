@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v2.10.0`.
+Framework version: `v2.10.1`.
 
 This is the invariant behind the harness.
 
