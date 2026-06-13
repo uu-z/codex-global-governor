@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v2.3.0`
+`v2.4.0`
 
 ## Repository Layout
 
@@ -23,6 +23,8 @@ Prove Reality.
 - `global/skills/codex-governor/SKILL.md`: Codex skill entrypoint.
 - `MASTER-BLUEPRINT.md`: project strategy blueprint.
 - `HARNESS.md`: project-local mental model.
+- `evals/`: adversarial governor evaluation cases and schema.
+- `scripts/governor-eval.sh`: local eval runner.
 - `outputs/`: audit and pruning evidence.
 
 ## Install Shape
@@ -47,3 +49,16 @@ Say less noise.
 Preserve 90% context and attention for decision quality.
 ```
 
+## Governor Evals
+
+Validate the eval harness:
+
+```bash
+./scripts/governor-eval.sh --dry-run
+```
+
+Run full local model evals:
+
+```bash
+./scripts/governor-eval.sh
+```

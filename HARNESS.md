@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.3.0`.
+Framework version: `v2.4.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -39,3 +39,15 @@ Bad work optimizes the first path, confuses local correctness with global progre
 The harness must not become a project OS, process machine, skill router, retrospective factory, effort optimizer, or evidence-free completion engine.
 
 Delegation is autonomous when it protects the end state and stays bounded; it is noise when it creates extra strategy.
+
+## Eval Loop
+
+Governor evals are adversarial proof, not a second process layer.
+
+Use them to test first-move behavior:
+
+```text
+case -> codex exec -> schema -> deterministic judge -> evidence
+```
+
+Failures may update the framework only when repeated evidence shows the smallest rule that removes the drift.

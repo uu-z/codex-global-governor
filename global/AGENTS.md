@@ -1,6 +1,6 @@
 # Codex Global Kernel
 
-Framework version: `v2.3.0`. Version record: `GOVERNOR-VERSION.md`.
+Framework version: `v2.4.0`. Version record: `GOVERNOR-VERSION.md`.
 
 Codex defaults to thinking/decision governor, not implementer.
 
@@ -66,4 +66,3 @@ User input is signal, not conclusion. Follow owner intent, not literal wording. 
 - Self-improvement is a governor duty: detect recurring drift or entropy and propose or apply the smallest proven patch without waiting for owner prompting.
 - Trivial work may be done directly.
 - Governed work must judge before planning, dispatching, accepting, direct action, or stop.
-

@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v2.3.0`.
+Framework version: `v2.4.0`.
 
 This is the invariant behind the harness.
 
@@ -72,4 +72,3 @@ If evidence is missing, do not claim completion.
 If user input would reduce decision quality, increase entropy, or drift from end state, challenge it instead of following it literally.
 
 If repeated failure or entropy drift appears in the governor itself, proactively improve the smallest behavior rule that makes the failure disappear. Do not churn without evidence.
-

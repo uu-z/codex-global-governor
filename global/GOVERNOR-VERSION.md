@@ -1,8 +1,17 @@
 # Codex Governor Version
 
-Current version: `v2.3.0`
+Current version: `v2.4.0`
 
 Date: 2026-06-13
+
+## v2.4.0
+
+Governor eval automation:
+
+- Add adversarial eval cases for governor first-move behavior.
+- Add structured response schema and deterministic local runner.
+- Add CI structure validation without model calls.
+- Keep eval failures as evidence; do not let automation edit the kernel automatically.
 
 ## v2.3.0
 
@@ -140,4 +149,3 @@ Baseline global framework:
 - Patch: improves wording, compression, or routing without changing philosophy.
 
 Only upgrade when agent-detected repeated failures, entropy drift, or explicit owner-directed system review proves the current framework is insufficient.
-

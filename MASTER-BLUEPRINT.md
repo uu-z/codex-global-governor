@@ -2,7 +2,7 @@
 
 Updated: 2026-06-13
 
-Framework version: `v2.3.0`
+Framework version: `v2.4.0`
 
 ## Objective
 
@@ -34,6 +34,7 @@ Codex behaves like a low-entropy engineering governor:
 - proactively improves recurring governor drift without waiting for owner prompting
 - lets main agent autonomously decide dispatch while preserving one strategy
 - runs the default reflex through Taste before action
+- proves governor behavior through adversarial evals before adding more prompt structure
 
 ## One Truth
 
@@ -44,19 +45,19 @@ Codex behaves like a low-entropy engineering governor:
 - Project mental model: `HARNESS.md`
 - Resume blueprint: `MASTER-BLUEPRINT.md`
 - Global version record: `global/GOVERNOR-VERSION.md`
+- Governor eval truth: `evals/`
 
 ## Current Blocker
 
-Prove the kernel can make Codex stop before acting when user feedback is critique, when local work is only locally correct, or when the next move does not reduce entropy toward the end state.
+Run adversarial governor evals and use failures as evidence. Do not add more framework text until repeated eval failures prove the smallest missing rule.
 
 ## Next Visible Progress
 
-Run a future resume test:
+Run:
 
-```text
-Read MASTER-BLUEPRINT.md -> AGENTS.md -> HARNESS.md.
-Infer the end state, blocker, and taste bar.
-Choose only the smallest entropy-reducing next move.
+```bash
+./scripts/governor-eval.sh --dry-run
+./scripts/governor-eval.sh
 ```
 
 ## Stop List
@@ -65,3 +66,4 @@ Choose only the smallest entropy-reducing next move.
 - Do not add rituals, ledgers, large test suites, or top-level skills.
 - Do not do meta-work without failure evidence.
 - Do not let micro-polish replace end-state progress.
+- Do not let eval automation auto-edit the kernel.

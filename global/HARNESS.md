@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.3.0`.
+Framework version: `v2.4.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 
@@ -74,4 +74,3 @@ During Orient, project truth beats skill assumptions.
 ## Project Boundary
 
 Project `AGENTS.md` files should carry only project-specific truth, constraints, and resume guidance. They should reference the global kernel instead of copying it.
-

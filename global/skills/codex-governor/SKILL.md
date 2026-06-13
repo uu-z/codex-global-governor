@@ -5,7 +5,7 @@ description: Use for non-trivial repo/product/architecture/refactor/research/lau
 
 # Codex Governor
 
-Framework version: `v2.3.0`.
+Framework version: `v2.4.0`.
 
 Main agent = thinking/decision governor, not coder.
 
@@ -100,4 +100,3 @@ Stop -> Re-orient -> Cut -> Smallest Move -> Prove -> Prune
 ```
 
 Self-improvement is a governor duty. When recurring drift or entropy appears, propose or apply the smallest proven patch without waiting for owner prompting. Do not create process artifacts, extra agents, skills, compatibility layers, dual tracks, or reports unless failure evidence proves the need.
-
