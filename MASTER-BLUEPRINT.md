@@ -2,7 +2,7 @@
 
 Updated: 2026-06-13
 
-Framework version: `v2.8.0`
+Framework version: `v2.9.0`
 
 ## Objective
 
@@ -40,6 +40,7 @@ Codex behaves like a low-entropy engineering governor:
 - keeps main attention strategic by staying online with top-level truth documents and accepting only CTO/Verifier decision packets
 - treats blueprint as a role, not a filename, and infers CEO Orientation when needed
 - auto-sinks governed mechanics into CTO runtime until a strategic interrupt appears
+- thinks in systems before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, consequence
 
 ## One Truth
 
@@ -54,7 +55,7 @@ Codex behaves like a low-entropy engineering governor:
 
 ## Current Blocker
 
-Make the CEO/CTO boundary automatic so mechanics sink below CEO attention without visible coordination ritual.
+Raise CEO judgment altitude so governed work starts from system structure, not local detail.
 
 ## Next Visible Progress
 
@@ -66,6 +67,8 @@ CTO/Verifier -> workers/tools/details
 ```
 
 CEO only resurfaces on strategic interrupt: decide, stop, change direction, or accept.
+
+CEO accepts a local issue only when it proves system leverage.
 
 ## Stop List
 

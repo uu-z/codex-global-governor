@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v2.8.0`.
+Framework version: `v2.9.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -26,6 +26,8 @@ The loop traverses layers; it is not a layer.
 
 If the session gets heavy, compress or discard the 10% first.
 
+In governed work, spend the protected 90% on System Lens before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, and consequence.
+
 Taste bar = simpler future, denser leverage, smaller surface.
 
 ## Taste
@@ -41,6 +43,8 @@ The harness must not become a project OS, process machine, skill router, retrosp
 Delegation is autonomous when it protects the end state and stays bounded; it is noise when it creates extra strategy.
 
 CTO runtime is automatic. Governed mechanics run below CEO attention until the signal is strategic: decide, stop, change direction, or accept.
+
+System Lens is mandatory before CEO accepts a local issue as important. Local detail must prove system leverage.
 
 ## CEO Boundary
 

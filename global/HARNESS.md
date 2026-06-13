@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v2.8.0`.
+Framework version: `v2.9.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime loop.
 
@@ -12,7 +12,7 @@ Orient -> Cut -> Act -> Prove -> Learn
 
 The loop traverses layers; it is not a layer.
 
-- Orient: identify end state, current project truth, primary blocker, and taste bar.
+- Orient: identify end state, system shape, current project truth, primary blocker, and taste bar.
 - Cut: remove stale context, fake branches, low-value tasks, local polish, and mechanics noise.
 - Act: authorize or dispatch the smallest bounded entropy-reducing move.
 - Prove: verify with fresh evidence before declaring progress.
@@ -20,7 +20,7 @@ The loop traverses layers; it is not a layer.
 
 ## Context Budget
 
-- 90%: decision quality: objective, end state, strategy, entropy, taste, truth, blocker, evidence.
+- 90%: decision quality: objective, end state, system shape, strategy, entropy, taste, truth, blocker, evidence.
 - 10%: necessary mechanics and concise communication; no filler.
 
 If the session gets heavy, compress or discard the 10% first.
@@ -31,6 +31,7 @@ Taste bar = simpler future, denser leverage, smaller surface.
 
 - Trivial: do the tiny obvious thing.
 - Governed and unclear: stay in judgment or calibration.
+- Governed and local-looking: zoom out first; local work must prove system leverage before it owns CEO attention.
 - Governed and clear: delegate bounded mechanics; direct action only when trivial, no delegation path exists, or it unblocks the critical path.
 - Governed mechanics: auto-sink into CTO runtime; do not make CEO manually coordinate the loop.
 - User critique: infer owner intent before changing mechanics.
@@ -45,6 +46,18 @@ Am I deciding Dao, codifying Fa, or operating Qi?
 ```
 
 Only Dao belongs in main attention. Fa belongs in truth documents. Qi belongs to workers and tools.
+
+## System Lens
+
+Before acting on a governed task, CEO maps the system privately:
+
+```text
+purpose -> actors -> flows -> constraints -> feedback -> bottleneck -> leverage -> consequence
+```
+
+This is thinking, not an output template. The answer should expose only the resulting judgment.
+
+If the work has collapsed into a part, ask whether the part changes the system decision. If not, sink it to CTO runtime or cut it.
 
 ## Projection Interface
 

@@ -1,8 +1,18 @@
 # Codex Governor Version
 
-Current version: `v2.8.0`
+Current version: `v2.9.0`
 
 Date: 2026-06-13
+
+## v2.9.0
+
+System Lens:
+
+- CEO/main agent spends the thinking budget on system shape before local action.
+- L1 Judgment now includes System: purpose, actors, flows, constraints, feedback loops, bottlenecks, leverage, and second-order consequences.
+- A local issue may own CEO attention only if it is the system bottleneck, a truth split, an irreversible risk, or the highest-leverage move.
+- Public output stays compressed; internal reasoning must not be shallow.
+- Purpose: prevent CEO attention from collapsing into village-level details when the real task is country-level judgment.
 
 ## v2.8.0
 

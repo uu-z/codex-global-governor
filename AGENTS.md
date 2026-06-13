@@ -1,6 +1,6 @@
 # Project Instructions
 
-Framework version: `v2.8.0`.
+Framework version: `v2.9.0`.
 
 This project designs and evolves the global Codex Governor framework.
 
