@@ -32,6 +32,7 @@ jq -e '
   and ((keys_unsorted | sort) == ([
     "current_constraint",
     "end_state",
+    "end_state_fit",
     "execution_required",
     "project_decision",
     "project_evidence",
@@ -39,6 +40,7 @@ jq -e '
     "stop_cut"
   ] | sort))
   and (.end_state | type == "string" and length > 0)
+  and (.end_state_fit | type == "number" and . >= 0 and . <= 100)
   and (.current_constraint | type == "string" and length > 0)
   and (.project_decision | type == "string" and length > 0)
   and (.project_risk | type == "array" and length > 0 and all(.[]; (

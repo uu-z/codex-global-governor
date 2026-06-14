@@ -109,6 +109,7 @@ Hard boundary:
 - Do not ask for or infer implementation details.
 - Do not narrate or name non-project surface categories.
 - Answer only with project-level decision signal matching the schema.
+- Set end_state_fit as a 0-100 judgment against external repeatable acceptance, not internal task completion.
 - If lower-layer execution is required, set execution_required=true and state only the project-level reason.
 - Choose project_risk enum values; do not explain risks there.
 - Choose the stop_cut enum; do not explain it.

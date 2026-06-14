@@ -2,7 +2,7 @@
 
 Date: 2026-06-14
 
-Framework version: `v3.2.0`
+Framework version: `v3.2.0` runtime evidence, with `v3.3.0` readiness addendum.
 
 ## Claim
 
@@ -39,6 +39,17 @@ Completed locally:
 - `./scripts/validate-project-surface.sh /tmp/project-surface-valid.json`: valid project-surface response accepted.
 - `./scripts/validate-project-surface.sh /tmp/project-surface-invalid.json`: transaction-surface response rejected.
 - `./scripts/governor-ceo.sh --project . -o /tmp/codex-governor-ceo-response.json "<project intent>"`: real Codex CEO run passed schema and semantic project-surface validation.
+
+## v3.3 Addendum
+
+End-State Fit adds a readiness judgment to the project surface. CEO status should distinguish a core path that can run once from a real MVP that external actors can repeat with low friction, clear recovery, and independent verification.
+
+Table-first CEO output is a presentation preference for dense project judgments: use compact tables for readiness gaps, risks, acceptance, and option comparison when they reduce entropy.
+
+Verification after v3.3:
+
+- `./scripts/governor-eval.sh`: full LLM governor eval passed 20/20.
+- `./scripts/governor-ceo.sh --project . -o /tmp/codex-governor-ceo-v33-response.json "<readiness intent>"`: real CEO run returned `end_state_fit: 62` and rejected the false 95% readiness interpretation.
 
 Observed failure before final shape:
 

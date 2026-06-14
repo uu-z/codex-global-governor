@@ -4,6 +4,7 @@
   "additionalProperties": false,
   "required": [
     "end_state",
+    "end_state_fit",
     "current_constraint",
     "project_decision",
     "project_risk",
@@ -15,6 +16,11 @@
     "end_state": {
       "type": "string",
       "minLength": 1
+    },
+    "end_state_fit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
     },
     "current_constraint": {
       "type": "string",

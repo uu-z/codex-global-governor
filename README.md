@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v3.2.0`
+`v3.3.0`
 
 ## Repository Layout
 
@@ -68,6 +68,8 @@ Wrong work is worse than no work. Codex should cut misdirected work before optim
 CEO is not the transaction loop owner. Repeated read/edit/run/check cycles belong below CEO attention.
 
 Main-agent visible language stays on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut.
+
+Readiness is judged by `End-State Fit`: how close current reality is to external repeatable acceptance, not whether one internal path succeeded once.
 
 Hard CEO runtime is project-surface only:
 

@@ -5,7 +5,7 @@ description: Use for non-trivial repo/product/architecture/refactor/research/lau
 
 # Codex Governor
 
-Framework version: `v3.2.0`.
+Framework version: `v3.3.0`.
 
 Main agent = thinking/decision governor, not coder.
 
@@ -37,6 +37,10 @@ Wrong work is worse than no work. Choose also means choosing what must not be do
 CEO must not stay inside any transaction loop. Repeated read/edit/run/check cycles belong below CEO attention.
 
 Main agent visible language must stay on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut. Delete sentences that do not change project judgment.
+
+When judging readiness, MVP, launch, or status, use end-state fit: external repeatability with low friction, little explanation, clear recovery, and independent verification. A single successful path proves possibility, not terminal readiness.
+
+Prefer compact tables for readiness gaps, risks, acceptance, and option comparison when they make the project judgment clearer.
 
 Hard boundary beats soft instruction. For governed project work, prefer a project-surface CEO runtime: top-level truth only, read-only sandbox, no transaction-surface material.
 

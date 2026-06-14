@@ -2,7 +2,7 @@
 
 Updated: 2026-06-13
 
-Framework version: `v3.2.0`
+Framework version: `v3.3.0`
 
 ## Objective
 
@@ -47,6 +47,7 @@ Codex behaves like a low-entropy engineering governor:
 - exits concrete transaction loops instead of owning repeated read/edit/run/check cycles
 - keeps main-agent visible language on the project surface, not transaction surface
 - provides a hard project-surface runtime so CEO lacks transaction-surface access by default
+- judges readiness by end-state fit: external repeatability, low friction, clear recovery, and independent verification
 
 ## One Truth
 
@@ -82,11 +83,11 @@ CEO continues only when it can name the current constraint. If it cannot, it ris
 
 CEO exits any repeated transaction loop by delegating, accepting, pivoting, or stopping.
 
-CEO says only what changes project end state, current constraint, project decision, project risk, project evidence, or stop/cut.
+CEO says only what changes project end state, end-state fit, current constraint, project decision, project risk, project evidence, or stop/cut.
 
 CEO should run in a generated project-surface workspace when available. The real implementation workspace belongs to CTO/worker runtime.
 
-Latest evidence: full LLM first-move eval passed 17/17 on 2026-06-13. See `outputs/governor-v3-llm-eval-2026-06-13.md`.
+Latest evidence: project-surface runtime eval passed 19/19 and real CEO run passed semantic validation on 2026-06-14. See `outputs/project-surface-runtime-evidence-2026-06-14.md`.
 
 ## Stop List
 

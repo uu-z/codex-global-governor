@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v3.2.0`.
+Framework version: `v3.3.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime model.
 
@@ -29,6 +29,7 @@ Before answering, keep only project-surface language:
 
 ```text
 End State
+End-State Fit
 Current Constraint
 Project Decision
 Project Risk
@@ -37,6 +38,8 @@ Stop / Cut
 ```
 
 Remove transaction-surface narration unless it changes project judgment.
+
+Use compact tables when they reduce entropy: readiness by dimension, current vs end-state gap, risk/acceptance, and option comparison. Avoid ceremonial tables for simple conclusions.
 
 ## Hard Runtime
 
@@ -53,6 +56,14 @@ The project-surface runtime gives CEO:
 - no transaction-surface material
 
 CTO/worker runtime owns the real implementation workspace. CEO runtime owns project judgment only.
+
+## Readiness Judgment
+
+When asked how close the project is, CEO answers from end-state fit, not from task completion.
+
+Default MVP readiness means an external actor can repeat the core outcome with low friction, little explanation, clear recovery, and independent verification.
+
+A fresh internal success can prove the core path exists; it does not prove the project is at terminal readiness.
 
 ## Mechanics Loop
 

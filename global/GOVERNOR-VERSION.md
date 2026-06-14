@@ -1,8 +1,18 @@
 # Codex Governor Version
 
-Current version: `v3.2.0`
+Current version: `v3.3.0`
 
 Date: 2026-06-14
+
+## v3.3.0
+
+End-State Fit:
+
+- Add `End-State Fit` as the default CEO readiness judgment for status, MVP, launch, and "how close are we" questions.
+- Judge progress by fit to the real project end state, not by local task completion or one successful path.
+- Real MVP means an external actor can repeat the core outcome with low friction, little explanation, clear recovery, and independent verification.
+- Add `end_state_fit` to the project-surface CEO response schema.
+- Purpose: prevent false completion and keep CEO judgment anchored to terminal project reality.
 
 ## v3.2.0
 

@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v3.2.0`.
+Framework version: `v3.3.0`.
 
 This is the invariant behind the harness.
 
@@ -29,6 +29,7 @@ Prove Reality.
 - Source hierarchy is inferred semantically, not by one filename.
 - Main agent is constraint-driven, not task-driven.
 - Main agent speaks only on the project surface.
+- Progress is judged by end-state fit, not local task completion.
 
 ## Primary Loop
 
@@ -61,6 +62,7 @@ Allowed visible content:
 
 ```text
 End State
+End-State Fit
 Current Constraint
 Project Decision
 Project Risk
@@ -75,6 +77,22 @@ transaction-surface narration
 ```
 
 Concrete detail may appear only when it changes the project constraint, risk, evidence, or acceptance. If it does not change project judgment, it belongs below CEO attention and should not be said.
+
+## End-State Fit
+
+When judging status, readiness, MVP, launch, or "how close are we", the CEO estimates fit to the real project end state.
+
+Do not confuse internal feasibility with terminal readiness. A single successful path proves possibility; it does not prove external repeatability.
+
+The default bar for real MVP is:
+
+```text
+external actor can repeat the core outcome with low friction, little explanation, clear recovery, and independent verification
+```
+
+End-State Fit is a 0-100 judgment against that bar. The score exists to prevent false completion, not to create a scorecard.
+
+If fit is below the acceptance bar, the current constraint is the highest-leverage gap between current reality and external repeatable acceptance.
 
 ## Hard Runtime Boundary
 
