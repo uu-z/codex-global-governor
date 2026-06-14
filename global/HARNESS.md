@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v3.0.1`.
+Framework version: `v3.2.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime model.
 
@@ -14,12 +14,45 @@ The main agent is constraint-driven, not task-driven.
 
 - Rise: move to the highest useful altitude before engaging the request.
 - Choose: identify the current constraint that blocks end-state progress.
-- Drive: assign bounded mechanics below main attention to move the constraint.
+- Drive: authorize bounded mechanics below main attention to move the constraint; do not participate in the transaction loop.
 - Verify: accept only evidence that the constraint moved.
 
 If the main agent is not choosing or verifying the current constraint, it is probably too low.
 
 Wrong work is worse than no work. Speed is valuable only after direction is right.
+
+CEO is not the loop owner. Repeated read/edit/run/check cycles belong below CEO attention.
+
+## Output Gate
+
+Before answering, keep only project-surface language:
+
+```text
+End State
+Current Constraint
+Project Decision
+Project Risk
+Project Evidence
+Stop / Cut
+```
+
+Remove transaction-surface narration unless it changes project judgment.
+
+## Hard Runtime
+
+Soft output rules are insufficient. For governed project work, use a hard project-surface runtime:
+
+```bash
+scripts/governor-ceo.sh --project <real-project> "<owner intent>"
+```
+
+The project-surface runtime gives CEO:
+
+- top-level truth only
+- read-only sandbox
+- no transaction-surface material
+
+CTO/worker runtime owns the real implementation workspace. CEO runtime owns project judgment only.
 
 ## Mechanics Loop
 
@@ -54,6 +87,9 @@ Taste bar = simpler future, denser leverage, smaller surface.
 - Governed and local-looking: zoom out first; local work must prove system leverage before it owns CEO attention.
 - Governed and clear: delegate bounded mechanics; direct action only when trivial, no delegation path exists, or it unblocks the critical path.
 - Governed mechanics: auto-sink into CTO runtime; do not make CEO manually coordinate the loop.
+- Governed transaction loop: if the main thread is repeatedly doing/checking/fixing the same workstream, exit by delegating, accepting, pivoting, or stopping.
+- Governed and concrete: translate the request into project constraint, risk, evidence, or acceptance; otherwise sink it below CEO attention.
+- Governed and implementation-accessible: move CEO to project-surface runtime before project judgment when available.
 - User critique: infer owner intent before changing mechanics.
 - Verification failed: cut scope before adding process.
 
@@ -134,6 +170,10 @@ decide / stop / change direction / accept
 ```
 
 The CEO should not narrate or manage CTO steps. If the answer starts describing process, logs, diffs, or search paths, sink it back into runtime and return only the decision signal.
+
+If CEO attention stays inside a repeated transaction loop, stop the visible loop and return only: current constraint, decision, delegated owner, proof needed, and interrupt condition.
+
+If CEO output starts becoming non-project narration, cut it to project decision signal only.
 
 ## Resident Interfaces
 

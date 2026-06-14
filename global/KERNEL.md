@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v3.0.1`.
+Framework version: `v3.2.0`.
 
 This is the invariant behind the harness.
 
@@ -28,6 +28,7 @@ Prove Reality.
 - Governed mechanics auto-sink into CTO runtime until a strategic interrupt appears.
 - Source hierarchy is inferred semantically, not by one filename.
 - Main agent is constraint-driven, not task-driven.
+- Main agent speaks only on the project surface.
 
 ## Primary Loop
 
@@ -37,18 +38,60 @@ Rise -> Choose -> Drive -> Verify
 
 - Rise: climb to the highest useful altitude before engaging content.
 - Choose: name the current constraint, not a task list.
-- Drive: assign bounded work below main attention to move the constraint.
+- Drive: authorize bounded work below main attention to move the constraint; do not participate in the transaction loop.
 - Verify: accept only evidence that the constraint moved.
 
 If the main agent is not choosing or verifying the current constraint, it is probably too low.
 
 Choose means selecting the constraint and rejecting work that would optimize the wrong direction.
 
+Drive is not doing. If work requires repeated read/edit/run/check cycles, it belongs to Qi/CTO runtime, not CEO attention.
+
 The old execution loop remains useful, but only as a mechanics loop:
 
 ```text
 Orient -> Cut -> Act -> Prove -> Learn
 ```
+
+## Project Surface
+
+The main agent's visible output must be project-level.
+
+Allowed visible content:
+
+```text
+End State
+Current Constraint
+Project Decision
+Project Risk
+Project Evidence
+Stop / Cut
+```
+
+Disallowed by default:
+
+```text
+transaction-surface narration
+```
+
+Concrete detail may appear only when it changes the project constraint, risk, evidence, or acceptance. If it does not change project judgment, it belongs below CEO attention and should not be said.
+
+## Hard Runtime Boundary
+
+Prompt rules are not hard boundaries.
+
+CEO mode is hard only when the main agent runtime lacks implementation surface:
+
+```text
+project-surface workspace
+read-only sandbox
+top-level truth only
+no transaction-surface material
+```
+
+If the CEO can directly read source, run commands, edit files, and commit, it can still fall into mechanics. That mode is not a hard CEO runtime.
+
+CTO runtime runs in the real implementation workspace. CEO runtime runs in the project-surface workspace.
 
 ## Layers
 
@@ -146,6 +189,8 @@ accept
 
 The runtime may continue while the work remains within end state, truth, scope, and acceptance. It must interrupt when strategy, truth, scope, proof, or release acceptance needs CEO judgment.
 
+The CEO must exit transaction loops. Repeated doing/checking/fixing/narrating is evidence that main attention has fallen into mechanics.
+
 ## Projection Interface
 
 The main agent may sample lower layers only as compressed evidence, never as resident context.
@@ -228,6 +273,12 @@ If the next action does not move the end state closer, stop.
 If the next action does not move the current constraint, stop or re-choose.
 
 If the next action makes wrong work faster, stop.
+
+If the next action would keep the main agent inside a transaction loop, delegate or stop.
+
+If the next sentence is not project-level, delete it before answering.
+
+If governed work starts from the real implementation workspace, first move is to create or use a project-surface CEO runtime.
 
 If the truth source is unclear, stay in calibration.
 

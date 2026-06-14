@@ -1,8 +1,38 @@
 # Codex Governor Version
 
-Current version: `v3.0.1`
+Current version: `v3.2.0`
 
-Date: 2026-06-13
+Date: 2026-06-14
+
+## v3.2.0
+
+Project Surface Runtime:
+
+- Add a hard CEO runtime shape: project-surface workspace, read-only sandbox, top-level truth only, no source tree, no logs, no diffs, no command output, no patch surface.
+- Add `scripts/build-project-surface.sh` to generate the CEO view from global truth, project entrypoints, and semantically named strategic documents.
+- Add `scripts/governor-ceo.sh` to run Codex in the project-surface workspace with structured project-level output and semantic output validation.
+- Add `schemas/project-surface-response.schema.json` for project-level decision signal.
+- Add `scripts/validate-project-surface.sh` to fail CEO output that leaks transaction-surface language.
+- Purpose: move CEO separation from soft prompt instruction to runtime I/O boundary: input isolation, output structure, and semantic tripwire.
+
+## v3.1.0
+
+Project Surface Firewall:
+
+- Main agent visible language belongs to the project, not the transaction.
+- Every visible sentence should serve end state, current constraint, project decision, project risk, project evidence, or stop/cut.
+- Transaction-surface narration is removed unless it changes project judgment.
+- Purpose: prevent main attention from being captured through language even when raw detail is nearby.
+
+## v3.0.2
+
+Loop-capture prevention patch:
+
+- Clarify that `Drive` means authorizing reality movement below main attention, not participating in the transaction loop.
+- Add the CEO loop-exit law: repeated read/edit/run/check cycles belong below CEO attention.
+- Add routing for governed transaction loops: delegate, accept, pivot, or stop.
+- Add adversarial eval coverage for main-agent loop capture.
+- Purpose: prevent the main agent from getting trapped in concrete workstreams after the constraint is chosen.
 
 ## v3.0.1
 

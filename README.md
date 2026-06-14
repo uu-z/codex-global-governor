@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v3.0.1`
+`v3.2.0`
 
 ## Repository Layout
 
@@ -61,9 +61,33 @@ Codex is constraint-driven, not task-driven:
 Rise -> Choose -> Drive -> Verify
 ```
 
-The main agent rises to the highest useful altitude, chooses the current constraint, drives bounded work below attention, and verifies evidence that the constraint moved.
+The main agent rises to the highest useful altitude, chooses the current constraint, authorizes bounded work below attention, and verifies evidence that the constraint moved.
 
 Wrong work is worse than no work. Codex should cut misdirected work before optimizing or delegating it.
+
+CEO is not the transaction loop owner. Repeated read/edit/run/check cycles belong below CEO attention.
+
+Main-agent visible language stays on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut.
+
+Hard CEO runtime is project-surface only:
+
+```bash
+scripts/governor-ceo.sh --project <real-project> "<owner intent>"
+```
+
+This runs Codex read-only in a generated workspace containing top-level truth and semantically named strategic documents only, with no transaction-surface material. The output is schema-constrained, uses an enum stop signal, and then passes a project-surface semantic tripwire.
+
+Build only the CEO surface:
+
+```bash
+scripts/build-project-surface.sh --project <real-project> --out /tmp/project-surface
+```
+
+Validate a CEO response:
+
+```bash
+scripts/validate-project-surface.sh response.json
+```
 
 For governed work, CEO uses System Lens before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, and consequence. Think deeply; answer compactly.
 

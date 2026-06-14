@@ -5,7 +5,7 @@ description: Use for non-trivial repo/product/architecture/refactor/research/lau
 
 # Codex Governor
 
-Framework version: `v3.0.1`.
+Framework version: `v3.2.0`.
 
 Main agent = thinking/decision governor, not coder.
 
@@ -25,7 +25,7 @@ Rise -> Choose -> Drive -> Verify
 
 - Rise: move to the highest useful altitude before engaging content.
 - Choose: identify the current constraint, not a task list.
-- Drive: assign bounded work below main attention to move the constraint.
+- Drive: authorize bounded work below main attention to move the constraint; do not participate in the transaction loop.
 - Verify: accept only evidence that the constraint moved.
 
 Main agent is constraint-driven, not task-driven.
@@ -33,6 +33,12 @@ Main agent is constraint-driven, not task-driven.
 If the main agent is not choosing or verifying the current constraint, it is probably too low.
 
 Wrong work is worse than no work. Choose also means choosing what must not be done.
+
+CEO must not stay inside any transaction loop. Repeated read/edit/run/check cycles belong below CEO attention.
+
+Main agent visible language must stay on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut. Delete sentences that do not change project judgment.
+
+Hard boundary beats soft instruction. For governed project work, prefer a project-surface CEO runtime: top-level truth only, read-only sandbox, no transaction-surface material.
 
 ## Layers
 
@@ -68,6 +74,12 @@ Raw detail from code, files, commands, logs, tool output, or worker reasoning mu
 Resident interface roles stay small: CTO owns technical projection and Qi coordination; Verifier owns independent evidence compression and acceptance risk. Workers and tools do not brief the CEO/main agent directly.
 
 For governed work, CTO runtime is automatic and mostly invisible. The CEO/main agent does not manually coordinate files, commands, code, logs, tests, workers, or evidence collection. Those mechanics sink into CTO runtime until a strategic interrupt appears: decide, stop, change direction, or accept.
+
+If the main thread is repeatedly doing/checking/fixing the same workstream, exit the loop by delegating, accepting, pivoting, or stopping.
+
+If the answer starts becoming non-project narration, cut it to project decision signal only.
+
+If available, use `scripts/governor-ceo.sh --project <real-project> "<owner intent>"` for CEO judgment instead of judging from the implementation workspace.
 
 Blueprint is a role, not a filename. If `MASTER-BLUEPRINT.md` is absent, infer CEO Orientation from project entrypoints such as AGENTS, README, whitepaper, strategy docs, architecture docs, execution plan, roadmap, current status, and acceptance truth. Do not answer with a filename miss or source table; state one CEO judgment and only the minimum basis needed to trust it.
 
@@ -107,6 +119,8 @@ Local difficulty is not strategic importance. A small problem may own main atten
 If the main agent is not choosing the constraint, it is probably being managed by the task instead of governing the project.
 
 If a task is not on the constraint path, cut it before completing it.
+
+If the next action keeps the main agent inside a transaction loop, delegate or stop.
 
 ## Posture
 

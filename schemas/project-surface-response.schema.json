@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "end_state",
+    "current_constraint",
+    "project_decision",
+    "project_risk",
+    "project_evidence",
+    "stop_cut",
+    "execution_required"
+  ],
+  "properties": {
+    "end_state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_constraint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_decision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_risk": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "soft_boundary_regression",
+          "surface_area_growth",
+          "missing_acceptance_signal",
+          "truth_split",
+          "strategy_sprawl",
+          "evidence_gap",
+          "none"
+        ]
+      }
+    },
+    "project_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "stop_cut": {
+      "type": "string",
+      "enum": [
+        "cut_non_project_surface",
+        "cut_wrong_direction",
+        "cut_missing_evidence",
+        "cut_strategy_sprawl",
+        "cut_none"
+      ]
+    },
+    "execution_required": {
+      "type": "boolean"
+    }
+  }
+}

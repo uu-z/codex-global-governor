@@ -218,7 +218,7 @@ Rules:
 - Treat the case user_input as the user's request.
 - Judge the first move the governor should make, not a full solution.
 - Return only JSON matching the provided output schema.
-- Use end state, system shape, current constraint, wrong-work avoidance, intent intake, entropy, taste, truth, smallest move, and evidence as the decision basis.
+- Use end state, system shape, current constraint, project-surface output, loop-capture avoidance, wrong-work avoidance, intent intake, entropy, taste, truth, smallest move, and evidence as the decision basis.
 
 Case:
 $(jq '.' <<<"$case_json")

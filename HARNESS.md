@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v3.0.1`.
+Framework version: `v3.2.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -10,9 +10,15 @@ Global behavior truth lives in `global/`. This file records the project-local me
 Rise -> Choose -> Drive -> Verify
 ```
 
-The main agent is constraint-driven, not task-driven. It rises to the highest useful altitude, chooses the current constraint, drives bounded work below attention, and verifies evidence that the constraint moved.
+The main agent is constraint-driven, not task-driven. It rises to the highest useful altitude, chooses the current constraint, authorizes bounded work below attention, and verifies evidence that the constraint moved.
 
 Wrong work is worse than no work. Cut misdirected work before optimizing it.
+
+CEO is not the transaction loop owner. Repeated read/edit/run/check cycles belong below CEO attention.
+
+Main visible language must stay on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut. Remove non-project narration.
+
+For governed project work, hard boundary requires CEO to run from project-surface truth, not the real implementation workspace. Use `scripts/governor-ceo.sh` when available. The surface builder may copy semantically named strategic documents, but not transaction-surface material.
 
 ## Mechanics Loop
 
