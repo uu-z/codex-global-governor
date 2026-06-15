@@ -146,6 +146,18 @@ judge_response() {
         and (($x.evidence_skill_reason | length) > 0)
         and (($x.stop_list | length) > 0)
         and (($x.evidence_needed | length) > 0)
+        and (
+          ($c.expected.must_include // {})
+          | to_entries
+          | all(. as $rule |
+              ($x[$rule.key] // "") as $field
+              | (
+                  ($rule.value | type == "array")
+                  and ($rule.value | length > 0)
+                  and all($rule.value[]; ($field | ascii_downcase | contains(. | ascii_downcase)))
+                )
+            )
+        )
         ),
         reasons: [
           (if $x.case_id == $c.id then empty else "case_id mismatch" end),
@@ -164,7 +176,14 @@ judge_response() {
           (if $x.evidence_skill == ($c.expected.evidence_skill // "none") then empty else "evidence_skill mismatch" end),
           (if (($x.evidence_skill_reason | length) > 0) then empty else "missing evidence_skill_reason" end),
           (if (($x.stop_list | length) > 0) then empty else "missing stop_list" end),
-          (if (($x.evidence_needed | length) > 0) then empty else "missing evidence_needed" end)
+          (if (($x.evidence_needed | length) > 0) then empty else "missing evidence_needed" end),
+          (
+            ($c.expected.must_include // {})
+            | to_entries[]
+            | . as $rule
+            | ($x[$rule.key] // "") as $field
+            | ($rule.value[] | select(($field | ascii_downcase | contains(. | ascii_downcase)) | not) | "missing " + $rule.key + " keyword: " + .)
+          )
         ]
       }
   '
