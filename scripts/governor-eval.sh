@@ -136,9 +136,12 @@ judge_response() {
           and (($x.end_state | length) > 0)
           and (($x.entropy_call | length) > 0)
           and (($x.taste_call | length) > 0)
-          and (($x.truth_source | length) > 0)
+        and (($x.truth_source | length) > 0)
         and (($x.primary_blocker | length) > 0)
         and (($x.smallest_next_move | length) > 0)
+        and (($x.project_choice | length) > 0)
+        and (($x.cut_line | length) > 0)
+        and (($x.proof_pivot | length) > 0)
         and ($x.evidence_skill == ($c.expected.evidence_skill // "none"))
         and (($x.evidence_skill_reason | length) > 0)
         and (($x.stop_list | length) > 0)
@@ -155,6 +158,9 @@ judge_response() {
           (if (($x.truth_source | length) > 0) then empty else "missing truth_source" end),
           (if (($x.primary_blocker | length) > 0) then empty else "missing primary_blocker" end),
           (if (($x.smallest_next_move | length) > 0) then empty else "missing smallest_next_move" end),
+          (if (($x.project_choice | length) > 0) then empty else "missing project_choice" end),
+          (if (($x.cut_line | length) > 0) then empty else "missing cut_line" end),
+          (if (($x.proof_pivot | length) > 0) then empty else "missing proof_pivot" end),
           (if $x.evidence_skill == ($c.expected.evidence_skill // "none") then empty else "evidence_skill mismatch" end),
           (if (($x.evidence_skill_reason | length) > 0) then empty else "missing evidence_skill_reason" end),
           (if (($x.stop_list | length) > 0) then empty else "missing stop_list" end),
@@ -225,6 +231,9 @@ Rules:
 - Use end state, taste, strong planning, layer thinking, system thinking, current constraint, project-surface output, loop-capture avoidance, wrong-work avoidance, intent intake, entropy, truth, smallest move, and evidence as the decision basis.
 - Set evidence_skill to "none" unless a temporary evidence skill can change the recommendation.
 - Use exactly one of these evidence_skill values: none, targeted_research, architecture_precedent, project_truth_audit, evidence_verification, option_stress_test.
+- project_choice must state the choice, allocation, or go/no-go recommendation.
+- cut_line must state what to stop, reject, exclude, or not optimize.
+- proof_pivot must state the evidence that would change, prove, or kill the recommendation.
 
 Case:
 $(jq '.' <<<"$case_json")

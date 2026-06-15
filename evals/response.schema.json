@@ -13,6 +13,9 @@
     "truth_source",
     "primary_blocker",
     "smallest_next_move",
+    "project_choice",
+    "cut_line",
+    "proof_pivot",
     "evidence_skill",
     "evidence_skill_reason",
     "stop_list",
@@ -55,6 +58,18 @@
       "minLength": 1
     },
     "smallest_next_move": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_choice": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cut_line": {
+      "type": "string",
+      "minLength": 1
+    },
+    "proof_pivot": {
       "type": "string",
       "minLength": 1
     },
