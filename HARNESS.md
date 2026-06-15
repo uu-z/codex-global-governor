@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v3.4.3`.
+Framework version: `v4.0.0`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -23,6 +23,10 @@ Visible language must stay on the project surface: end state, current constraint
 Readiness is judged by end-state fit: external repeatability, low friction, clear recovery, and independent verification.
 
 Layer thinking is internal: judge important project layers before tasks, then choose the current constraint from the lowest high-leverage gap.
+
+Decision value is the current control surface: recommendations must change project choice, allocation, stop/cut, proof path, or risk posture.
+
+Evidence skills are temporary and bounded. Default to none. Use one only when missing truth can change the recommendation; cut research that only produces background confidence.
 
 For governed project work, hard boundary means judgment runs from project-surface truth, not the real implementation workspace. Use `scripts/governor-surface.sh` when available. The surface builder may copy semantically named strategic documents, but not transaction-surface material.
 
@@ -95,3 +99,5 @@ case -> codex exec -> schema -> deterministic judge -> evidence
 ```
 
 Failures may update the framework only when repeated evidence shows the smallest rule that removes the drift.
+
+v4 evals also test whether evidence skills are selected only when they can change a recommendation.

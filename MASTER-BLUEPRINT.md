@@ -2,7 +2,7 @@
 
 Updated: 2026-06-15
 
-Framework version: `v3.4.3`
+Framework version: `v4.0.0`
 
 ## Objective
 
@@ -59,6 +59,9 @@ Codex behaves like a low-entropy engineering governor:
 - judges readiness by end-state fit: external repeatability, low friction, clear recovery, and independent verification
 - keeps structure disposable: tables, labels, checklists, packets, and schemas exist only when they reduce entropy
 - does not use organization metaphors, identity games, councils, personas, or coordination theater
+- treats decision value as the next control surface: recommendations must change project choice, allocation, stop/cut, proof path, or risk posture
+- uses evidence skills only when missing truth can change the recommendation
+- defaults to no skill and cuts research that only produces background confidence
 
 ## One Truth
 
@@ -73,7 +76,7 @@ Codex behaves like a low-entropy engineering governor:
 
 ## Current Constraint
 
-Keep judgment taste-driven without turning the harness into roles, rituals, or rigid ceremony.
+Make decision-layer output valuable without turning evidence skills into routing ceremony.
 
 ## Next Visible Progress
 
@@ -98,7 +101,7 @@ Visible output says only what changes project end state, end-state fit, current 
 
 Judgment should run in a generated project-surface workspace when available. The real implementation workspace belongs to execution.
 
-Latest evidence: v3.4.3 strengthens decision-layer residency. See `outputs/governor-v3.4.3-decision-layer-residency-evidence-2026-06-15.md`.
+Latest evidence: v4.0.0 adds a decision-value evidence skill gate. Full real eval passed 29/29. See `outputs/governor-v4-evidence-skill-gate-evidence-2026-06-15.md`.
 
 ## Stop List
 
@@ -119,3 +122,4 @@ Latest evidence: v3.4.3 strengthens decision-layer residency. See `outputs/gover
 - Do not turn layer thinking into mandatory tables, scorecards, schemas, or status forms.
 - Do not use implementation iteration to discover strategy.
 - Do not use organization metaphors, identity games, councils, personas, or coordination theater.
+- Do not use skills or research unless they can name the recommendation they may change.

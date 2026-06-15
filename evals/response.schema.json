@@ -13,6 +13,8 @@
     "truth_source",
     "primary_blocker",
     "smallest_next_move",
+    "evidence_skill",
+    "evidence_skill_reason",
     "stop_list",
     "evidence_needed"
   ],
@@ -53,6 +55,21 @@
       "minLength": 1
     },
     "smallest_next_move": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_skill": {
+      "type": "string",
+      "enum": [
+        "none",
+        "targeted_research",
+        "architecture_precedent",
+        "project_truth_audit",
+        "evidence_verification",
+        "option_stress_test"
+      ]
+    },
+    "evidence_skill_reason": {
       "type": "string",
       "minLength": 1
     },

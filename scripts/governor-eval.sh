@@ -137,10 +137,12 @@ judge_response() {
           and (($x.entropy_call | length) > 0)
           and (($x.taste_call | length) > 0)
           and (($x.truth_source | length) > 0)
-          and (($x.primary_blocker | length) > 0)
-          and (($x.smallest_next_move | length) > 0)
-          and (($x.stop_list | length) > 0)
-          and (($x.evidence_needed | length) > 0)
+        and (($x.primary_blocker | length) > 0)
+        and (($x.smallest_next_move | length) > 0)
+        and ($x.evidence_skill == ($c.expected.evidence_skill // "none"))
+        and (($x.evidence_skill_reason | length) > 0)
+        and (($x.stop_list | length) > 0)
+        and (($x.evidence_needed | length) > 0)
         ),
         reasons: [
           (if $x.case_id == $c.id then empty else "case_id mismatch" end),
@@ -153,6 +155,8 @@ judge_response() {
           (if (($x.truth_source | length) > 0) then empty else "missing truth_source" end),
           (if (($x.primary_blocker | length) > 0) then empty else "missing primary_blocker" end),
           (if (($x.smallest_next_move | length) > 0) then empty else "missing smallest_next_move" end),
+          (if $x.evidence_skill == ($c.expected.evidence_skill // "none") then empty else "evidence_skill mismatch" end),
+          (if (($x.evidence_skill_reason | length) > 0) then empty else "missing evidence_skill_reason" end),
           (if (($x.stop_list | length) > 0) then empty else "missing stop_list" end),
           (if (($x.evidence_needed | length) > 0) then empty else "missing evidence_needed" end)
         ]
@@ -182,7 +186,7 @@ fi
 
 require codex
 
-RUN_DIR="$OUT_BASE/$(date -u +%Y%m%dT%H%M%SZ)"
+RUN_DIR="$(mktemp -d "$OUT_BASE/$(date -u +%Y%m%dT%H%M%SZ).XXXXXX")"
 mkdir -p "$RUN_DIR"
 RESULTS_FILE="$RUN_DIR/results.jsonl"
 SUMMARY_FILE="$RUN_DIR/summary.json"
@@ -219,6 +223,8 @@ Rules:
 - Judge the first move the governor should make, not a full solution.
 - Return only JSON matching the provided output schema.
 - Use end state, taste, strong planning, layer thinking, system thinking, current constraint, project-surface output, loop-capture avoidance, wrong-work avoidance, intent intake, entropy, truth, smallest move, and evidence as the decision basis.
+- Set evidence_skill to "none" unless a temporary evidence skill can change the recommendation.
+- Use exactly one of these evidence_skill values: none, targeted_research, architecture_precedent, project_truth_audit, evidence_verification, option_stress_test.
 
 Case:
 $(jq '.' <<<"$case_json")

@@ -1,8 +1,22 @@
 # Codex Governor Version
 
-Current version: `v3.4.3`
+Current version: `v4.0.0`
 
 Date: 2026-06-15
+
+## v4.0.0
+
+Decision Value + Evidence Skill Gate:
+
+- Add decision value as the next control surface: a recommendation is valuable only when it changes project choice, allocation, stop/cut, proof path, or risk posture.
+- Add a minimal evidence skill gate: default to no skill; use one evidence skill only when missing truth can change the recommendation.
+- Recognize five temporary evidence skills: targeted research, architecture precedent, project truth audit, evidence verification, and option stress test.
+- Keep skills inside judgment calibration, not as standing routes, roles, or user-facing output ceremony.
+- Extend governor eval schema with `evidence_skill` and `evidence_skill_reason` so skill use becomes testable.
+- Add adversarial v4 eval coverage for skill sprawl, decision-changing targeted research, broad research noise, architecture precedent, completion verification, and irreversible option stress testing.
+- Fix eval output directory collisions by using unique run directories.
+- Full real eval evidence: `outputs/governor-evals/20260615T051702Z.XSxGAE/summary.json` passed 29/29.
+- Purpose: make decision-layer output valuable, not merely high-altitude.
 
 ## v3.4.3
 
@@ -29,7 +43,7 @@ Taste control surface:
 - Keep layer thinking internal and anti-scorecard.
 - Purpose: make the framework feel like taste and judgment, not organization theater.
 
-Earlier entries are historical records only. Current behavior language is v3.4.3.
+Earlier entries are historical records only. Current behavior language is v4.0.0.
 
 ## v3.4.1
 

@@ -14,7 +14,7 @@ Good taste makes everything else emerge: simpler future, denser leverage, smalle
 
 ## Current Version
 
-`v3.4.3`
+`v4.0.0`
 
 ## Repository Layout
 
@@ -47,6 +47,8 @@ The main thread owns taste and judgment. Execution details stay below main atten
 
 Decision-layer residency is invariant: tools may move truth or evidence, but main attention stays with judgment.
 
+Decision value is the control surface: a recommendation is valuable only if it changes project choice, allocation, stop/cut, proof path, or risk posture.
+
 Judgment loop:
 
 ```text
@@ -60,6 +62,8 @@ Iterative implementation is not strategy. System shape, boundary, acceptance pat
 Layer thinking is internal. Judge important project layers before tasks, but expose only the decision signal that changes project judgment.
 
 Expression serves judgment. Tables, labels, headings, scorecards, packets, and status forms are optional tools, not default behavior. If output looks like a form, collapse it into the decision.
+
+Evidence skills are temporary calibration tools, not routes. Default to no skill; use one only when missing truth can change the recommendation.
 
 Readiness is judged by `End-State Fit`: how close current reality is to external repeatable acceptance, not whether one internal path succeeded once.
 
