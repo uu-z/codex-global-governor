@@ -13,9 +13,9 @@ v3.4.1 keeps layer thinking internal and deletes the parts that turn judgment in
 ## Removed
 
 - Hard `layer_percentages` requirements from project-surface and eval response schemas.
-- Validator checks that forced layer percentages into CEO packets.
+- Validator checks that forced visible layer percentages into project-surface responses.
 - Prompt language requiring visible layer percentages.
-- The separate `architect-pm` skill route, because architecture/PM judgment belongs inside governor layer thinking, not a second workflow.
+- The separate `architect-pm` skill route, because architecture/project judgment belongs inside governor layer thinking, not a second workflow.
 - Stale v3.4 evidence claiming `layer_percentages` is a hard requirement.
 - Main-agent iterative implementation as an accepted way to discover strategy.
 
@@ -25,14 +25,14 @@ v3.4.1 keeps layer thinking internal and deletes the parts that turn judgment in
 - Project-surface runtime boundary.
 - Semantic tripwire against transaction-surface leakage.
 - Layer thinking as internal strategic judgment.
-- Constraint-first routing and CTO runtime separation.
+- Constraint-first routing and execution separation.
 
 ## Acceptance
 
 The framework should now:
 
 - think by layers without exposing scorecards by default
-- prevent raw implementation detail from reaching CEO attention
+- prevent raw implementation detail from reaching main attention
 - avoid mandatory tables, status forms, or repeated labels
 - require strong planning before execution: system shape, boundary, acceptance path, and cut line
 - keep hard boundaries where they reduce real leakage

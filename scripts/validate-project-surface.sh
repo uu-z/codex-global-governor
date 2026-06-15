@@ -5,7 +5,7 @@ usage() {
   cat <<'USAGE'
 Usage: scripts/validate-project-surface.sh RESPONSE_JSON
 
-Validates that a CEO/governor response stays on the project surface.
+Validates that a governed response stays on the project surface.
 This is a semantic tripwire, not a full JSON Schema implementation.
 USAGE
 }

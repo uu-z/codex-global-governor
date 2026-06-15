@@ -9,7 +9,7 @@ usage() {
   cat <<'USAGE'
 Usage: scripts/build-project-surface.sh [--project DIR] [--out DIR]
 
-Builds a project-surface workspace for CEO/governor runs.
+Builds a project-surface workspace for governed judgment.
 
 The surface copies only top-level project truth and global governor truth.
 It intentionally excludes transaction-surface material.
@@ -115,11 +115,11 @@ Source project:
 $PROJECT_DIR
 \`\`\`
 
-This workspace is a CEO/project-surface view. It intentionally excludes transaction-surface material.
+This workspace is a project-surface view. It intentionally excludes transaction-surface material.
 
 Top-level truth is copied from explicit project entrypoints and semantically named strategic documents under project/truth-docs/.
 
-Allowed CEO attention:
+Allowed main attention:
 
 \`\`\`text
 End State
@@ -131,7 +131,7 @@ Project Evidence
 Stop / Cut
 \`\`\`
 
-If mechanics are required, route them to CTO runtime in the real project workspace.
+If implementation is required, keep it in the real project workspace below main attention.
 SURFACE
 
 find "$OUT_DIR" -type f | sort

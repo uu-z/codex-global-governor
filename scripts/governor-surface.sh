@@ -9,12 +9,12 @@ OUT_FILE=""
 
 usage() {
   cat <<'USAGE'
-Usage: scripts/governor-ceo.sh [--project DIR] [--surface DIR] [--model MODEL] [-o FILE] [PROMPT]
+Usage: scripts/governor-surface.sh [--project DIR] [--surface DIR] [--model MODEL] [-o FILE] [PROMPT]
 
-Runs Codex as a CEO/governor in a hard project-surface workspace.
+Runs Codex in a hard project-surface workspace for governed judgment.
 
 Hard boundary:
-- CEO working directory is the generated project surface, not the real project.
+- Working directory is the generated project surface, not the real project.
 - Sandbox is read-only.
 - Output is constrained to project-level decision signal.
 - Transaction-surface material is not present.
@@ -101,11 +101,11 @@ cat <<PROMPT_BODY | codex --ask-for-approval never exec \
   -o "$OUT_FILE" \
   "${MODEL_ARGS[@]}" \
   - >/dev/null
-You are the CEO/governor.
+You are the judgment governor.
 
 Hard boundary:
 - You are in a project-surface workspace, not the real project.
-- Do not call tools. The surface has enough truth for the first CEO judgment.
+- Do not call tools. The surface has enough truth for the first governed judgment.
 - Do not ask for or infer implementation details.
 - Do not narrate or name non-project surface categories.
 - Answer only with project-level decision signal matching the schema.

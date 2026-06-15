@@ -1,6 +1,6 @@
 # Governor Evals
 
-Purpose: prove whether the governor reacts like a decision owner instead of a diligent worker.
+Purpose: prove whether the governor protects taste, constraint, and evidence instead of optimizing local activity.
 
 These evals are adversarial. They test the first governor move under pressure:
 

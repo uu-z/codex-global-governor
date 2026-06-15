@@ -1,8 +1,22 @@
 # Codex Governor Version
 
-Current version: `v3.4.1`
+Current version: `v3.4.2`
 
 Date: 2026-06-15
+
+## v3.4.2
+
+Taste control surface:
+
+- Make taste the top control variable: simpler future, denser leverage, smaller surface, stronger proof.
+- Remove current-behavior language based on organization metaphors, execution identities, and old philosophy-triad metaphors.
+- Rename the hard judgment entrypoint to `scripts/governor-surface.sh`.
+- Replace role language with neutral layers: main attention, project truth, execution, evidence, project surface.
+- Keep the hard project-surface boundary and transaction-surface leakage checks.
+- Keep layer thinking internal and anti-scorecard.
+- Purpose: make the framework feel like taste and judgment, not organization theater.
+
+Earlier entries are historical records only. Current behavior language is v3.4.2.
 
 ## v3.4.1
 
@@ -13,7 +27,7 @@ Entropy-reduction rollback of rigid behavior:
 - Remove validator checks and prompt wording that forced percentage scorecards.
 - Delete the separate `architect-pm` route; architecture and project-management judgment belong inside governor layer thinking, not a new workflow.
 - Compress global behavior files to reduce repeated rules and template pressure.
-- Reaffirm that CEO/main agent must not use iterative implementation to discover strategy.
+- Reaffirm that main attention must not use iterative implementation to discover strategy.
 - Strong planning comes first: system shape, boundary, acceptance path, and cut line before execution.
 - Keep hard runtime boundaries where they prevent raw detail leakage.
 - Purpose: preserve high-level strategic judgment while preventing the harness from becoming rigid process theater.
