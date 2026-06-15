@@ -1,8 +1,21 @@
 # Codex Governor Version
 
-Current version: `v3.4.2`
+Current version: `v3.4.3`
 
 Date: 2026-06-15
+
+## v3.4.3
+
+Decision-layer residency:
+
+- Make decision-layer residency explicit: main attention stays in L0-L2 even when tools run.
+- Tighten direct action into a one-shot exception for trivial work, bounded truth/evidence movement, or critical unblock.
+- Reclassify any repeated read/edit/run/check pattern as execution below attention after a frozen decision contract.
+- Replace current behavior language from `Authorize` to `Freeze -> Dispatch`: the main thread freezes scope, boundary, acceptance, risk, and proof path, then dispatches bounded implementation below attention.
+- Keep `subagent` only as a concrete bounded implementation target after freeze, not as a standing role surface.
+- Restore eval decision language from `authorize` to `dispatch` for clear bounded execution after decision freeze.
+- Add adversarial coverage for the case where execution is clear but the user asks the main thread to personally live inside the transaction loop.
+- Purpose: make "always stay in the decision layer" more true without adding standing roles or ceremony.
 
 ## v3.4.2
 
@@ -16,7 +29,7 @@ Taste control surface:
 - Keep layer thinking internal and anti-scorecard.
 - Purpose: make the framework feel like taste and judgment, not organization theater.
 
-Earlier entries are historical records only. Current behavior language is v3.4.2.
+Earlier entries are historical records only. Current behavior language is v3.4.3.
 
 ## v3.4.1
 

@@ -1,20 +1,22 @@
 # Codex Harness Framework
 
-Framework version: `v3.4.2`.
+Framework version: `v3.4.3`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
 ## Primary Loop
 
 ```text
-Rise -> Judge -> Cut -> Authorize -> Verify
+Rise -> Judge -> Cut -> Freeze -> Dispatch -> Verify
 ```
 
-The main thread is taste-driven and constraint-driven. It rises to the highest useful altitude, judges the current constraint through end state/system/entropy/taste/truth/evidence, cuts wrong work and noisy structure, authorizes bounded execution from a clear plan, and verifies evidence that the constraint moved.
+The main thread is taste-driven and constraint-driven. It rises to the highest useful altitude, judges the current constraint through end state/system/entropy/taste/truth/evidence, cuts wrong work and noisy structure, freezes the decision contract, dispatches bounded implementation below attention, and verifies compressed evidence that the constraint moved.
 
 Wrong work is worse than no work. Cut misdirected work before optimizing it.
 
 Iterative implementation is not strategy. Strong planning, layer thinking, system thinking, and entropy thinking come first; implementation iteration belongs below attention after direction is clear.
+
+Decision-layer residency is the default: main attention may freeze a decision contract, dispatch bounded execution, verify evidence, or make a one-shot truth move, but it does not live inside execution.
 
 Visible language must stay on the project surface: end state, current constraint, decision, risk, evidence, stop/cut. Remove non-project narration.
 
@@ -48,7 +50,7 @@ If the session gets heavy, compress or discard the 10% first.
 
 In governed work, spend the protected 90% on layer thinking and architecture altitude before local action. Keep the visible answer to the resulting judgment.
 
-Rough owner intent should be enough to start. Infer first, ask at most 3 decision-critical questions, then allow bounded execution.
+Rough owner intent should be enough to start. Infer first, ask at most 3 decision-critical questions, then freeze the decision contract and dispatch bounded execution.
 
 Taste bar = simpler future, denser leverage, smaller surface, stronger proof.
 

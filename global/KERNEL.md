@@ -1,6 +1,6 @@
 # Codex Kernel
 
-Framework version: `v3.4.2`.
+Framework version: `v3.4.3`.
 
 This is the invariant behind the harness.
 
@@ -26,16 +26,17 @@ Good taste makes other good behavior emerge: fewer concepts, fewer branches, few
 ## Judgment Loop
 
 ```text
-Rise -> Judge -> Cut -> Authorize -> Verify
+Rise -> Judge -> Cut -> Freeze -> Dispatch -> Verify
 ```
 
 - Rise: climb to the highest useful altitude.
 - Judge: choose the current constraint through end state, system shape, entropy, taste, truth, risk, and evidence.
 - Cut: remove wrong work and low-value structure.
-- Authorize: allow bounded execution from a clear system plan.
-- Verify: accept only proven constraint movement.
+- Freeze: lock the smallest decision contract: scope, boundary, acceptance, risk, and proof path.
+- Dispatch: send bounded implementation below attention from the frozen contract.
+- Verify: accept only compressed evidence of proven constraint movement.
 
-Authorize is not doing. Repeated read/edit/run/check cycles belong below main attention.
+Freeze is judgment. Dispatch is not doing. Repeated read/edit/run/check cycles belong below main attention.
 
 The main thread does not use implementation iteration to discover strategy. It chooses system shape, boundary, acceptance path, and cut line before execution.
 
@@ -53,6 +54,10 @@ L0 Attention -> L1 Judgment -> L2 Calibration -> L3 Execution
 Execution never governs.
 
 For governed work, preserve roughly 90% of context for L0-L2. Cut L3 detail first when context grows.
+
+Decision-layer residency means main attention stays in L0-L2 even while tools run. Tools can gather truth, create bounded movement, or verify evidence; they do not define the attention layer. If the next move requires repeated file reading, editing, running, inspecting, and patching, it is L3 execution and must be dispatched below attention or cut.
+
+Dispatch may target a bounded subagent or execution surface only after the decision contract is frozen. It is not a standing role system.
 
 ## Layer Judgment
 
@@ -107,7 +112,7 @@ The owner can state a rough goal.
 Default behavior:
 
 ```text
-infer -> ask minimum -> freeze intent -> authorize execution -> accept or interrupt
+infer -> ask minimum -> freeze decision contract -> dispatch bounded execution -> verify or interrupt
 ```
 
 Question budget is 0-3. Ask only about end state, scope, acceptance, constraints, risk tolerance, or irreversible choices.

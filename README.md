@@ -14,7 +14,7 @@ Good taste makes everything else emerge: simpler future, denser leverage, smalle
 
 ## Current Version
 
-`v3.4.2`
+`v3.4.3`
 
 ## Repository Layout
 
@@ -45,13 +45,15 @@ global/skills/codex-governor/SKILL.md -> ~/.codex/skills/codex-governor/SKILL.md
 
 The main thread owns taste and judgment. Execution details stay below main attention.
 
+Decision-layer residency is invariant: tools may move truth or evidence, but main attention stays with judgment.
+
 Judgment loop:
 
 ```text
-Rise -> Judge -> Cut -> Authorize -> Verify
+Rise -> Judge -> Cut -> Freeze -> Dispatch -> Verify
 ```
 
-The main thread rises to the highest useful altitude, judges the current constraint through end state/system/entropy/taste/truth/evidence, cuts wrong work and noisy structure, authorizes only bounded execution from a clear plan, and verifies proven movement.
+The main thread rises to the highest useful altitude, judges the current constraint through end state/system/entropy/taste/truth/evidence, cuts wrong work and noisy structure, freezes the decision contract, dispatches bounded implementation below attention, and verifies compressed evidence.
 
 Iterative implementation is not strategy. System shape, boundary, acceptance path, and cut line come first; implementation iteration happens only after direction is clear.
 

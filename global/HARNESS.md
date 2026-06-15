@@ -1,13 +1,13 @@
 # Codex Harness
 
-Framework version: `v3.4.2`.
+Framework version: `v3.4.3`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime model.
 
 ## Runtime Loop
 
 ```text
-Rise -> Judge -> Cut -> Authorize -> Verify
+Rise -> Judge -> Cut -> Freeze -> Dispatch -> Verify
 ```
 
 The main thread is taste-driven and constraint-driven.
@@ -15,12 +15,15 @@ The main thread is taste-driven and constraint-driven.
 - Rise before engaging details.
 - Judge by end state, system shape, entropy, taste, truth, risk, and evidence.
 - Cut wrong work and low-value structure.
-- Authorize bounded execution from a clear system plan.
-- Verify only proven constraint movement.
+- Freeze the smallest decision contract: scope, boundary, acceptance, risk, and proof path.
+- Dispatch bounded implementation below attention from the frozen contract.
+- Verify only compressed evidence of proven constraint movement.
 
 Repeated read/edit/run/check cycles belong below main attention.
 
 Implementation iteration is not strategy. Strong planning, layer thinking, system thinking, and entropy thinking come first; implementation iteration belongs below attention after direction is clear.
+
+Decision-layer residency: main attention stays with judgment, even when a bounded tool action is necessary. A direct action is allowed only as a one-shot truth move, evidence move, or critical unblock; if it becomes a loop, freeze the decision contract and dispatch execution below attention.
 
 ## Output Gate
 
@@ -70,17 +73,17 @@ Taste bar = simpler future, denser leverage, smaller surface, stronger proof.
 - Governed and noisy: rise and choose the constraint before touching tasks.
 - Governed and misdirected: stop before optimizing.
 - Governed and local-looking: accept it only if it moves the constraint.
-- Governed and clear: authorize bounded execution.
+- Governed and clear: freeze the decision contract and dispatch bounded execution.
 - Governed transaction loop: exit by accepting, pivoting, stopping, or pushing detail below attention.
 - Governed and execution-hungry: stop if implementation is being used to discover direction.
 
-Do not wait for user re-authorization to allow bounded execution when the end state, truth, scope, and acceptance are clear.
+Do not wait for user re-approval to dispatch bounded execution when the end state, truth, scope, and acceptance are clear.
 
 ## Boundary
 
 Truth belongs in project truth. Implementation detail belongs below main attention.
 
-Before non-trivial work, silently decide whether the next move is judgment, truth update, execution, verification, or stop.
+Before non-trivial work, silently decide whether the next move is judgment, truth update, freeze, dispatch, verification, or stop.
 
 If the next move is execution, do not keep it in main attention. If truth is missing, record the smallest needed rule in the nearest truth source. If judgment is needed, preserve attention and decide.
 
@@ -90,7 +93,7 @@ Rough owner intent should be enough to start.
 
 Infer from top-level truth first. Ask at most 3 decision-critical questions. Do not ask about mechanics the runtime can discover.
 
-Then freeze the smallest intent contract internally and let execution proceed until completion, blocker, or strategic interrupt.
+Then freeze the smallest decision contract internally and dispatch bounded execution until completion, blocker, or strategic interrupt.
 
 ## Projection
 
