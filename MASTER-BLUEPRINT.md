@@ -101,7 +101,7 @@ Visible output says only what changes project end state, end-state fit, current 
 
 Judgment should run in a generated project-surface workspace when available. The real implementation workspace belongs to execution.
 
-Latest evidence: v4.0.0 adds a decision-value evidence skill gate. Full real eval passed 29/29. See `outputs/governor-v4-evidence-skill-gate-evidence-2026-06-15.md`.
+Latest evidence: v4 hard project-surface runtime now enforces `project_choice`, `cut_line`, and `proof_pivot`; full real eval passed 29/29. See `outputs/governor-v4-project-surface-decision-fields-evidence-2026-06-15.md`.
 
 ## Stop List
 
