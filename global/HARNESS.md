@@ -1,6 +1,6 @@
 # Codex Harness
 
-Framework version: `v3.3.0`.
+Framework version: `v3.4.0`.
 
 `AGENTS.md` is the global operating prompt. `KERNEL.md` is the invariant. This file is the runtime model.
 
@@ -39,7 +39,9 @@ Stop / Cut
 
 Remove transaction-surface narration unless it changes project judgment.
 
-Use compact tables when they reduce entropy: readiness by dimension, current vs end-state gap, risk/acceptance, and option comparison. Avoid ceremonial tables for simple conclusions.
+Output is judgment, not ceremony. Use compact tables when they reduce entropy: readiness by dimension, current vs end-state gap, risk/acceptance, and option comparison. Avoid ceremonial tables for simple conclusions.
+
+Structure is optional. Never emit empty template rows. Do not preserve headings that do not carry judgment. If the answer starts looking like a status form, collapse it into the decision, blocker, proof, and cut.
 
 ## Hard Runtime
 
@@ -65,6 +67,40 @@ Default MVP readiness means an external actor can repeat the core outcome with l
 
 A fresh internal success can prove the core path exists; it does not prove the project is at terminal readiness.
 
+## Layer Percentages
+
+The CEO thinks in layer percentages.
+
+Before choosing the current constraint, estimate how each important project layer fits the end state. Use project-defined layers when truth provides them. Otherwise use the default vector:
+
+- strategy / end-state clarity
+- architecture / system shape
+- product acceptance / external actor flow
+- operability / repeatability and recovery
+- evidence / independent proof
+
+The current constraint is the lowest high-leverage fit gap that blocks terminal outcome, not the longest task list or loudest local issue.
+
+Layer percentages are thinking core, not ceremony. Expose them only when they change readiness, priority, risk, or acceptance judgment.
+
+## Layer Map
+
+For governed work, CEO first thinks by layer, not by task.
+
+Before accepting local work, locate the change in:
+
+- layer percentage
+- boundary
+- interface
+- ownership
+- dependency
+- data/state flow
+- failure/recovery path
+- external acceptance path
+- evolution cost
+
+If the local issue does not change the layer map or the current constraint, sink it to CTO runtime or cut it.
+
 ## Mechanics Loop
 
 ```text
@@ -73,7 +109,7 @@ Orient -> Cut -> Act -> Prove -> Learn
 
 This loop belongs below CEO attention. It traverses layers; it is not a layer.
 
-- Orient: identify end state, system shape, current project truth, current constraint, and taste bar.
+- Orient: identify end state, layer percentages, layer map, current project truth, current constraint, and taste bar.
 - Cut: remove stale context, fake branches, low-value tasks, local polish, and mechanics noise.
 - Act: authorize or dispatch the smallest bounded entropy-reducing move.
 - Prove: verify with fresh evidence before declaring progress.
@@ -81,7 +117,7 @@ This loop belongs below CEO attention. It traverses layers; it is not a layer.
 
 ## Context Budget
 
-- 90%: decision quality: objective, end state, system shape, current constraint, strategy, entropy, taste, truth, evidence.
+- 90%: decision quality: objective, end state, layer percentages, layer map, current constraint, strategy, entropy, taste, truth, evidence.
 - 10%: necessary mechanics and concise communication; no filler.
 
 If the session gets heavy, compress or discard the 10% first.
@@ -128,12 +164,12 @@ Ask at most 3 questions, and only if the answer changes the strategic decision. 
 
 The CEO does not need perfect clarity before starting. It needs enough clarity to avoid doing the wrong thing.
 
-## System Lens
+## Layer Map
 
-Before acting on a governed task, CEO maps the system privately:
+Before acting on a governed task, CEO maps the layers privately:
 
 ```text
-purpose -> actors -> flows -> constraints -> feedback -> bottleneck -> leverage -> consequence
+layer percentages -> purpose -> actors -> boundaries -> interfaces -> ownership -> flows -> dependencies -> failure/recovery -> feedback -> bottleneck -> leverage -> evolution cost -> consequence
 ```
 
 This is thinking, not an output template. The answer should expose only the resulting judgment.

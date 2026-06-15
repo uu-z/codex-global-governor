@@ -1,8 +1,22 @@
 # Codex Governor Version
 
-Current version: `v3.3.0`
+Current version: `v3.4.0`
 
-Date: 2026-06-14
+Date: 2026-06-15
+
+## v3.4.0
+
+Layer-percent judgment and judgment-first output:
+
+- Make layer thinking the core of strategic judgment: estimate each important layer's percentage fit to the end state before choosing the current constraint.
+- Choose the current constraint from the lowest high-leverage layer gap blocking terminal outcome.
+- Add `layer_percentages` to the hard project-surface CEO response.
+- Make expression serve judgment instead of ceremony.
+- Labels, tables, headings, scorecards, and status forms are tools, not defaults.
+- Use structure only when it makes project judgment denser.
+- Never emit empty template rows.
+- If output looks like a form, rewrite it as a decision.
+- Purpose: keep CEO thinking at layer altitude while preventing the governor framework from becoming rigid process theater after it successfully avoids raw implementation detail.
 
 ## v3.3.0
 

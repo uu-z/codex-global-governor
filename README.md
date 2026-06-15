@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v3.3.0`
+`v3.4.0`
 
 ## Repository Layout
 
@@ -21,6 +21,7 @@ Prove Reality.
 - `global/HARNESS.md`: runtime loop and delegation model.
 - `global/GOVERNOR-VERSION.md`: version history.
 - `global/skills/codex-governor/SKILL.md`: Codex skill entrypoint.
+- `global/skills/architect-pm/SKILL.md`: architecture and delivery judgment skill.
 - `MASTER-BLUEPRINT.md`: project strategy blueprint.
 - `HARNESS.md`: project-local mental model.
 - `evals/`: adversarial governor evaluation cases and schema.
@@ -37,6 +38,7 @@ global/KERNEL.md -> ~/.codex/KERNEL.md
 global/HARNESS.md -> ~/.codex/HARNESS.md
 global/GOVERNOR-VERSION.md -> ~/.codex/GOVERNOR-VERSION.md
 global/skills/codex-governor/SKILL.md -> ~/.codex/skills/codex-governor/SKILL.md
+global/skills/architect-pm/SKILL.md -> ~/.codex/skills/architect-pm/SKILL.md
 ```
 
 ## Operating Principle
@@ -69,6 +71,10 @@ CEO is not the transaction loop owner. Repeated read/edit/run/check cycles belon
 
 Main-agent visible language stays on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut.
 
+Layer thinking is the core. Main agent estimates each important layer's current percentage fit to the end state, then chooses the current constraint from the lowest high-leverage gap.
+
+Expression serves judgment. Tables, labels, headings, scorecards, and status forms are optional tools, not default behavior. If output looks like a form, collapse it into the decision.
+
 Readiness is judged by `End-State Fit`: how close current reality is to external repeatable acceptance, not whether one internal path succeeded once.
 
 Hard CEO runtime is project-surface only:
@@ -91,7 +97,7 @@ Validate a CEO response:
 scripts/validate-project-surface.sh response.json
 ```
 
-For governed work, CEO uses System Lens before local action: purpose, actors, flows, constraints, feedback, bottleneck, leverage, and consequence. Think deeply; answer compactly.
+For governed work, CEO uses layer thinking and architecture altitude before local action: purpose, actors, boundaries, interfaces, ownership, flows, dependencies, failure/recovery, feedback, bottleneck, leverage, evolution cost, and consequence. Think deeply; answer compactly.
 
 For governed work, CTO runtime is automatic: mechanics run below CEO attention until a strategic interrupt appears: decide, stop, change direction, or accept.
 

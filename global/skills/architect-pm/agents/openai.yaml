@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architect PM"
+  short_description: "Architecture and delivery judgment"
+  default_prompt: "Use $architect-pm to assess project architecture, readiness, blockers, and delivery plan."
