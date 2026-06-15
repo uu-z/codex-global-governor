@@ -31,17 +31,23 @@ jq -e '
   type == "object"
   and ((keys_unsorted | sort) == ([
     "current_constraint",
+    "cut_line",
     "end_state",
     "end_state_fit",
     "execution_required",
+    "project_choice",
     "project_decision",
     "project_evidence",
     "project_risk",
+    "proof_pivot",
     "stop_cut"
   ] | sort))
   and (.end_state | type == "string" and length > 0)
   and (.end_state_fit | type == "number" and . >= 0 and . <= 100)
   and (.current_constraint | type == "string" and length > 0)
+  and (.project_choice | type == "string" and length > 0)
+  and (.cut_line | type == "string" and length > 0)
+  and (.proof_pivot | type == "string" and length > 0)
   and (.project_decision | type == "string" and length > 0)
   and (.project_risk | type == "array" and length > 0 and all(.[]; (
     . == "soft_boundary_regression"

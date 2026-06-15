@@ -112,6 +112,9 @@ Hard boundary:
 - Set end_state_fit as a 0-100 judgment against external repeatable acceptance, not internal task completion.
 - Internally think by each important layer's fit to the end state, but expose only the constraint-relevant judgment.
 - Choose current_constraint from the lowest high-leverage layer gap blocking terminal outcome.
+- Set project_choice to the choice, allocation, or go/no-go recommendation.
+- Set cut_line to what should stop, be rejected, be excluded, or not be optimized.
+- Set proof_pivot to the evidence that would prove, kill, or change the recommendation.
 - Do not use implementation iteration to discover strategy; choose from system shape, boundary, acceptance path, entropy, and evidence.
 - If lower-layer execution is required, set execution_required=true and state only the project-level reason.
 - Choose project_risk enum values; do not explain risks there.

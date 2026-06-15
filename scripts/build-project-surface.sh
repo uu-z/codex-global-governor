@@ -125,6 +125,9 @@ Allowed main attention:
 End State
 End-State Fit
 Current Constraint
+Project Choice
+Cut Line
+Proof Pivot
 Project Decision
 Project Risk
 Project Evidence

@@ -65,6 +65,8 @@ Expression serves judgment. Tables, labels, headings, scorecards, packets, and s
 
 Evidence skills are temporary calibration tools, not routes. Default to no skill; use one only when missing truth can change the recommendation.
 
+Hard project-surface responses also carry `project_choice`, `cut_line`, and `proof_pivot` so the runtime enforces concrete choice, stop/cut, and proof-change logic.
+
 Readiness is judged by `End-State Fit`: how close current reality is to external repeatable acceptance, not whether one internal path succeeded once.
 
 Hard project-surface judgment runtime:
