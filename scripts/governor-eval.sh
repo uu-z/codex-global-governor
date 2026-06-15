@@ -134,10 +134,6 @@ judge_response() {
           and ($x.stage == $c.expected.stage)
           and (($c.expected.allowed_decisions | index($x.decision)) != null)
           and (($x.end_state | length) > 0)
-          and (($x.layer_percentages | type) == "array")
-          and (($x.layer_percentages | length) > 0)
-          and (($x.layer_percentages | length) <= 7)
-          and (all($x.layer_percentages[]; ((.layer | type) == "string") and ((.layer | length) > 0) and ((.fit | type) == "number") and (.fit >= 0) and (.fit <= 100)))
           and (($x.entropy_call | length) > 0)
           and (($x.taste_call | length) > 0)
           and (($x.truth_source | length) > 0)
@@ -152,7 +148,6 @@ judge_response() {
           (if $x.stage == $c.expected.stage then empty else "stage mismatch" end),
           (if (($c.expected.allowed_decisions | index($x.decision)) != null) then empty else "decision mismatch" end),
           (if (($x.end_state | length) > 0) then empty else "missing end_state" end),
-          (if ((($x.layer_percentages | type) == "array") and (($x.layer_percentages | length) > 0) and (($x.layer_percentages | length) <= 7) and (all($x.layer_percentages[]; ((.layer | type) == "string") and ((.layer | length) > 0) and ((.fit | type) == "number") and (.fit >= 0) and (.fit <= 100)))) then empty else "invalid layer_percentages" end),
           (if (($x.entropy_call | length) > 0) then empty else "missing entropy_call" end),
           (if (($x.taste_call | length) > 0) then empty else "missing taste_call" end),
           (if (($x.truth_source | length) > 0) then empty else "missing truth_source" end),
@@ -223,8 +218,7 @@ Rules:
 - Treat the case user_input as the user's request.
 - Judge the first move the governor should make, not a full solution.
 - Return only JSON matching the provided output schema.
-- Use end state, layer percentages, layer map, current constraint, project-surface output, loop-capture avoidance, wrong-work avoidance, intent intake, entropy, taste, truth, smallest move, and evidence as the decision basis.
-- Include layer_percentages as 1-7 important project layers with 0-100 fit to the end state.
+- Use end state, strong planning, layer thinking, system thinking, current constraint, project-surface output, loop-capture avoidance, wrong-work avoidance, intent intake, entropy, taste, truth, smallest move, and evidence as the decision basis.
 
 Case:
 $(jq '.' <<<"$case_json")

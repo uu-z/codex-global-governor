@@ -110,8 +110,9 @@ Hard boundary:
 - Do not narrate or name non-project surface categories.
 - Answer only with project-level decision signal matching the schema.
 - Set end_state_fit as a 0-100 judgment against external repeatable acceptance, not internal task completion.
-- Set layer_percentages as the current percentage fit of each important project layer to the end state. Use project-defined layers if present; otherwise use strategy, architecture, product acceptance, operability, and evidence.
+- Internally think by each important layer's fit to the end state, but expose only the constraint-relevant judgment.
 - Choose current_constraint from the lowest high-leverage layer gap blocking terminal outcome.
+- Do not use implementation iteration to discover strategy; choose from system shape, boundary, acceptance path, entropy, and evidence.
 - If lower-layer execution is required, set execution_required=true and state only the project-level reason.
 - Choose project_risk enum values; do not explain risks there.
 - Choose the stop_cut enum; do not explain it.

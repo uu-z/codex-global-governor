@@ -12,7 +12,7 @@ Prove Reality.
 
 ## Current Version
 
-`v3.4.0`
+`v3.4.1`
 
 ## Repository Layout
 
@@ -21,7 +21,6 @@ Prove Reality.
 - `global/HARNESS.md`: runtime loop and delegation model.
 - `global/GOVERNOR-VERSION.md`: version history.
 - `global/skills/codex-governor/SKILL.md`: Codex skill entrypoint.
-- `global/skills/architect-pm/SKILL.md`: architecture and delivery judgment skill.
 - `MASTER-BLUEPRINT.md`: project strategy blueprint.
 - `HARNESS.md`: project-local mental model.
 - `evals/`: adversarial governor evaluation cases and schema.
@@ -38,7 +37,6 @@ global/KERNEL.md -> ~/.codex/KERNEL.md
 global/HARNESS.md -> ~/.codex/HARNESS.md
 global/GOVERNOR-VERSION.md -> ~/.codex/GOVERNOR-VERSION.md
 global/skills/codex-governor/SKILL.md -> ~/.codex/skills/codex-governor/SKILL.md
-global/skills/architect-pm/SKILL.md -> ~/.codex/skills/architect-pm/SKILL.md
 ```
 
 ## Operating Principle
@@ -63,15 +61,17 @@ Codex is constraint-driven, not task-driven:
 Rise -> Choose -> Drive -> Verify
 ```
 
-The main agent rises to the highest useful altitude, chooses the current constraint, authorizes bounded work below attention, and verifies evidence that the constraint moved.
+The main agent rises to the highest useful altitude, chooses the current constraint, authorizes bounded work below attention from a clear system plan, and verifies evidence that the constraint moved.
 
 Wrong work is worse than no work. Codex should cut misdirected work before optimizing or delegating it.
 
 CEO is not the transaction loop owner. Repeated read/edit/run/check cycles belong below CEO attention.
 
+Iterative implementation is not a main-agent strategy. CEO plans system shape, boundary, acceptance path, and cut line first; iteration belongs to CTO runtime after direction is clear.
+
 Main-agent visible language stays on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut.
 
-Layer thinking is the core. Main agent estimates each important layer's current percentage fit to the end state, then chooses the current constraint from the lowest high-leverage gap.
+Layer thinking is internal. Main agent judges the important project layers before tasks, but exposes only the decision signal that changes project judgment.
 
 Expression serves judgment. Tables, labels, headings, scorecards, and status forms are optional tools, not default behavior. If output looks like a form, collapse it into the decision.
 
@@ -83,7 +83,7 @@ Hard CEO runtime is project-surface only:
 scripts/governor-ceo.sh --project <real-project> "<owner intent>"
 ```
 
-This runs Codex read-only in a generated workspace containing top-level truth and semantically named strategic documents only, with no transaction-surface material. The output is schema-constrained, uses an enum stop signal, and then passes a project-surface semantic tripwire.
+This runs Codex read-only in a generated workspace containing top-level truth and semantically named strategic documents only, with no transaction-surface material. Its machine packet is constrained to prevent raw detail leakage; public communication should still be natural project judgment, not a form.
 
 Build only the CEO surface:
 
@@ -97,7 +97,7 @@ Validate a CEO response:
 scripts/validate-project-surface.sh response.json
 ```
 
-For governed work, CEO uses layer thinking and architecture altitude before local action: purpose, actors, boundaries, interfaces, ownership, flows, dependencies, failure/recovery, feedback, bottleneck, leverage, evolution cost, and consequence. Think deeply; answer compactly.
+For governed work, CEO uses strong planning, layer thinking, system thinking, and architecture altitude before local action. Think deeply; answer compactly.
 
 For governed work, CTO runtime is automatic: mechanics run below CEO attention until a strategic interrupt appears: decide, stop, change direction, or accept.
 

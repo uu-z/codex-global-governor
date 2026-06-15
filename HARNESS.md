@@ -1,6 +1,6 @@
 # Codex Harness Framework
 
-Framework version: `v3.4.0`.
+Framework version: `v3.4.1`.
 
 Global behavior truth lives in `global/`. This file records the project-local mental model.
 
@@ -10,17 +10,19 @@ Global behavior truth lives in `global/`. This file records the project-local me
 Rise -> Choose -> Drive -> Verify
 ```
 
-The main agent is constraint-driven, not task-driven. It rises to the highest useful altitude, chooses the current constraint, authorizes bounded work below attention, and verifies evidence that the constraint moved.
+The main agent is constraint-driven, not task-driven. It rises to the highest useful altitude, chooses the current constraint, authorizes bounded work below attention from a clear system plan, and verifies evidence that the constraint moved.
 
 Wrong work is worse than no work. Cut misdirected work before optimizing it.
 
 CEO is not the transaction loop owner. Repeated read/edit/run/check cycles belong below CEO attention.
 
+Iterative implementation is not CEO strategy. Strong planning, layer thinking, system thinking, and entropy thinking come first; implementation iteration belongs to CTO runtime after direction is clear.
+
 Main visible language must stay on the project surface: end state, current constraint, project decision, project risk, project evidence, stop/cut. Remove non-project narration.
 
 Readiness is judged by end-state fit: external repeatability, low friction, clear recovery, and independent verification.
 
-Layer thinking is the core: estimate each important layer's percentage fit to the end state, then choose the current constraint from the lowest high-leverage gap.
+Layer thinking is internal: judge important project layers before tasks, then choose the current constraint from the lowest high-leverage gap.
 
 For governed project work, hard boundary requires CEO to run from project-surface truth, not the real implementation workspace. Use `scripts/governor-ceo.sh` when available. The surface builder may copy semantically named strategic documents, but not transaction-surface material.
 
@@ -41,12 +43,12 @@ The old loop is mechanics. It traverses layers; it is not a layer.
 
 ## Context Budget
 
-- 90%: decision quality: objective, end state, layer percentages, strategy, current constraint, entropy, taste, truth, evidence.
+- 90%: decision quality: objective, end state, system shape, strategy, current constraint, entropy, taste, truth, evidence.
 - 10%: necessary mechanics and concise communication; no filler.
 
 If the session gets heavy, compress or discard the 10% first.
 
-In governed work, spend the protected 90% on layer thinking and architecture altitude before local action: purpose, actors, boundaries, interfaces, ownership, flows, dependencies, failure/recovery, feedback, bottleneck, leverage, evolution cost, consequence, and the current constraint.
+In governed work, spend the protected 90% on layer thinking and architecture altitude before local action. Keep the visible answer to the resulting judgment.
 
 Rough owner intent should be enough to start. Infer first, ask at most 3 decision-critical questions, then let CTO runtime iterate.
 
@@ -66,7 +68,7 @@ Delegation is autonomous when it protects the end state and stays bounded; it is
 
 CTO runtime is automatic. Governed mechanics run below CEO attention until the signal is strategic: decide, stop, change direction, or accept.
 
-Layer thinking and architecture altitude are mandatory before CEO accepts a local issue as important. Local detail must prove it moves a key layer percentage or system leverage.
+Layer thinking and architecture altitude are mandatory before CEO accepts a local issue as important. Local detail must prove current-constraint movement or system leverage.
 
 Intent Intake prevents owner-driven micromanagement: CEO asks only what changes strategy, not what mechanics can discover.
 

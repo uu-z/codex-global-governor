@@ -123,7 +123,7 @@ Allowed CEO attention:
 
 \`\`\`text
 End State
-Layer Percentages
+End-State Fit
 Current Constraint
 Project Decision
 Project Risk

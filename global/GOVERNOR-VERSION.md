@@ -1,8 +1,22 @@
 # Codex Governor Version
 
-Current version: `v3.4.0`
+Current version: `v3.4.1`
 
 Date: 2026-06-15
+
+## v3.4.1
+
+Entropy-reduction rollback of rigid behavior:
+
+- Keep layer thinking as internal strategic judgment, not mandatory visible output.
+- Remove hard `layer_percentages` requirements from project-surface and eval schemas.
+- Remove validator checks and prompt wording that forced percentage scorecards.
+- Delete the separate `architect-pm` route; architecture and project-management judgment belong inside governor layer thinking, not a new workflow.
+- Compress global behavior files to reduce repeated rules and template pressure.
+- Reaffirm that CEO/main agent must not use iterative implementation to discover strategy.
+- Strong planning comes first: system shape, boundary, acceptance path, and cut line before execution.
+- Keep hard runtime boundaries where they prevent raw detail leakage.
+- Purpose: preserve high-level strategic judgment while preventing the harness from becoming rigid process theater.
 
 ## v3.4.0
 
